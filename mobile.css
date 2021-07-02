@@ -1,0 +1,32 @@
+.block
+{
+    margin: 0px auto;
+    text-align: center;
+    width :80%;
+    height: 10vw;
+    background-color: aqua;
+}
+.block:hover
+{
+    background-color: rgb(160, 241, 241);
+    
+}
+.outside
+{
+    display: block;
+    justify-content: center;
+}
+.list
+{
+    display: none;
+}
+body
+{
+    background-color:cornflowerblue ;
+}
+.ptitle
+{
+    font-size: 3rem;
+    margin: 1rem auto;
+}
+
