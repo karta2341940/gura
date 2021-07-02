@@ -1,10 +1,10 @@
 .title
-{
-    text-align: center;
+{   
+    font-size: 16pt ;
+    text-align: left;
     background-color: rgb(255, 255, 255);
     float: inline-end;
     opacity: 0.8;
-    display: none;
    
 }
 .outside
@@ -25,7 +25,8 @@
     height: auto;
     width: 25%;
     border-radius: 8pt;
-    background-color: #74b1e7;
+    background-color: #ffffff;
+    padding: 3%;
 }
 .list 
 {
@@ -33,16 +34,18 @@
     display: none;
     */
     height: auto;
-    text-align: center;
+    text-align: left;
 }
+
 li
 {
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 .al
-{
-    color: black;
+{   
+    font-size: 14pt ;
+    color: #007C9D;
     text-decoration: none;
 }
 .ls:hover
@@ -51,5 +54,11 @@ li
     background-color: azure;
     opacity: 0.5;
 }
-    
+
+.underline
+{
+    height: 5px;
+    width:auto;
+    background-color: #F0B31C;
+}
 
