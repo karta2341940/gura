@@ -13,6 +13,7 @@
     width: auto;
     margin-left: 11.4vw;
     /*
+    margin-left: 11.6vw;
     justify-content: center;
     */
 }
@@ -60,8 +61,4 @@ li
     height: 5px;
     width:auto;
     background-color: #F0B31C;
-}
-.open
-{
-    
 }
