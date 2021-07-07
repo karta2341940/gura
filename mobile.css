@@ -6,22 +6,8 @@
     height: auto;
     background-color: #ffffff;
     border-radius:10px;
-    
 }
-.block:hover
-{
-    background-color: rgb(160, 241, 241);
-    
-}
-.blocklist
-{   
-    margin: 5px auto;
-    text-align: center;
-    width :90%;
-    height: auto;
-    background-color: #007C9D;
-    border-radius:10px;
-}
+
 .al
 {   
     font-size: 14pt ;
@@ -29,6 +15,7 @@
     text-decoration: none;
  
 }
+
 .ls
 {
     background-color: #007C9D;
@@ -37,29 +24,37 @@
     width :90%;
     padding: 1%;
 }
+
 li
 {
     list-style: none;
 }
+
 .outside
 {
     display: block;
     height: auto;
     justify-content: center;
 }
-.empty
+
+.apr
+{
+    transition: all 1s ease-in-out;
+}
+
+.list br
 {
     display: none;
 }
+
 .title
 {
     background-color: #F0B31C;
     border-radius:10px;
     padding: 1px;
-    
-    
-
 }
+
+
 .ptitle
 {   
     color: #ffffff;
@@ -71,5 +66,3 @@ li
 {
     display: none;
 }
-
-/*hhhhh*/
