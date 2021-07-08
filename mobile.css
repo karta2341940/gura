@@ -18,11 +18,15 @@
 
 .ls
 {
+    
     background-color: #007C9D;
     margin: 5px auto;
     border-radius:10px;
     width :90%;
     padding: 1%;
+    height: 0%;
+    
+
 }
 
 li
@@ -39,7 +43,8 @@ li
 
 .apr
 {
-    transition: all 1s ease-in-out;
+  
+    transition: all 6s;
 }
 
 .list br
