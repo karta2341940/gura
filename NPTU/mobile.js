@@ -4,6 +4,7 @@ function gura(self)
 {
     let calli = document.getElementsByClassName("list");
     let ina=0;
+    
     for( i = 0 ; i <ame.length ; i ++)
     {
         if( ame[i] == self )
@@ -12,16 +13,17 @@ function gura(self)
             break;
         }
     }   
+
+    
+
     if( kiara[ina] != true )
     {
         calli[ina].classList.remove("clicked");
-        calli[ina].classList.add("apr");
         kiara[ina] = true; 
     }
     else
     {
         calli[ina].classList.add("clicked");
-        //calli[ina].classList.remove("clicked");
         kiara[ina] = false; 
     }
     //console.log(kiara[i]);
