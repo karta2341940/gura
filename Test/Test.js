@@ -18,7 +18,6 @@ new function()
     }   
 }
 
-
 function gura(self)
 {
     

@@ -22,17 +22,14 @@
             {
                 position: fixed;
                 right: 0.5%;
-                top: 70%;
+                bottom: 10%;
                 z-index: 99;
-
-                /*
-                display: none;
-                */
+                transform: translateX(100px);
+                transition-duration: 500ms;
             }
            .imgg
             {
                 width: 3vw !important;
-                background-image:linear-gradient(#f00, #00f),url("https://www2.nptu.edu.tw/var/file/0/1000/img/3993/top.svg");
                 
             }
             @media screen and (max-width: 768px){
@@ -48,40 +45,40 @@
                     width: 10vw !important;
                 }
             }
-            .imgg:hover
-            {
-                background-image:url("https://www2.nptu.edu.tw/var/file/0/1000/img/3993/top.svg");
-                background-blend-mode: screen;
-            }
         </style>
             
         <div onclick="gogotop()" class = "gogotop">
             
-            <img  class="imgg">
-            <!--
-                <img  class="imgg" src="https://www2.nptu.edu.tw/var/file/0/1000/img/3993/top.svg">
-            -->
-            </div>
+            <img  class="imgg" src="https://www2.nptu.edu.tw/var/file/0/1000/img/3993/top.svg">
+        
+        </div>
 
         
 
 
         <script>
+
+
+
+
             function gogotop()
             {
                 $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
                 return false;
             }
-            $(window).scroll(function() {
-            if ( $(this).scrollTop() > 400)
-            {
-                $('#gogotop').fadeIn();
-            }
-            else
-            {
-                $('#gogotop').fadeOut();
-            }
-            });
+           document.body.onscroll=function()
+           {
+               console.log(window.scrollY);
+               if(window.scrollY > 200) 
+               {
+                   document.querySelector(".gogotop").setAttribute("style","transform: translateX(-40px);");
+               }
+               else 
+               {
+                document.querySelector(".gogotop").setAttribute("style","transform: translateX(100px);");
+               }
+           }
+
         </script>
 
 
