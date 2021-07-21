@@ -1,8 +1,26 @@
-let ame = document.getElementsByClassName("block");
+let ame  = document.getElementsByClassName("block");
 let kiara=[];
+let calli2 = document.getElementsByClassName("ls");
 let calli = document.getElementsByClassName("list");
 let ina=0;
-let heightpeko=[];
+let heightpeko=[];                                      //save all value of height in this array
+let k = 2;
+var j = 0;
+
+new function()
+{
+    
+    var ss5 = getComputedStyle(calli2[5]).height;
+    for( let i = 0 ; i < ame.length ; i ++)
+    {
+        //console.log("stylt ls: "+ss5);
+        //console.log("style : "+getComputedStyle(calli[i]).height);
+        heightpeko[i] = getComputedStyle(calli[i]).height;
+        calli[i].setAttribute("style","height: 0px");
+    }   
+}
+
+
 function gura(self)
 {
     
@@ -14,18 +32,17 @@ function gura(self)
             break;
         }
     }   
-
-    console.log(calli[ina].offsetHeight);
-    heightpeko[ina]=calli[ina].offsetHeight;
     
-
+    
     if( kiara[ina] != true )
     {
-        Peko(kiara[ina],0);
+        Peko(kiara[ina],heightpeko[ina]);
+        kiara[ina] = true; 
     }
     else
     {
         Peko(kiara[ina],heightpeko[ina]);
+        kiara[ina] = false; 
     }
     
 
@@ -50,33 +67,26 @@ function gura(self)
 }
 
 
-
 function Peko(bool,pasen) 
 {
-    if(bool!= true)
-    {
-        setTimeout(function(){ 
-        
-            calli[ina].setAttribute("style","height:"+pasen+"px");
-            kiara[ina] = true;    
-        }, 10);
-        
-    }
-    else
-    {
-        setTimeout(function(){ 
+    j=0;
+    var myvar  = setInterval(function()
+    {        
+       if(parseFloat(j)>parseFloat(pasen))
+       {
+        console.log("ok");
+        clearInterval(myvar);
+       }
+        calli[ina].setAttribute("style","height:"+j+"px");
+        //console.log("style : "+calli[ina].clientHeight);
+        //console.log("hei : "+heightpeko[ina]);
+        j++
 
-            calli[ina].setAttribute("style","height:0px");
-            kiara[ina] = false;
-            
-         
-        }, 300);
-    }
-    /*
-    if(pasen < 100)
-    {
-        Peko(bool,pasen++);
-    }
-    */
+    }, 2);
     
+}
+
+function stopp()
+{
+    clearInterval(myvar);
 }

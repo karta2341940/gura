@@ -36,12 +36,13 @@ body
     border-radius:10px;
     width :90%;
     padding: 1%;
-    height: 0%;
+    height: auto;
 }
 
 li
 {
     list-style: none;
+    
     
 }
 
@@ -69,7 +70,7 @@ li
 
 .clicked
 {
-    height: 0px;
+    height: 100%;
     overflow: hidden;
     /*
     display: none;
