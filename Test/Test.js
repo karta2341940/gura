@@ -4,17 +4,15 @@ let calli2 = document.getElementsByClassName("ls");
 let calli = document.getElementsByClassName("list");
 let ina=0;
 let heightpeko=[];                                      //save all value of height in this array
-let k = 2;
-var j = 0;
+var j = [];
 
 new function()
 {
     
-    var ss5 = getComputedStyle(calli2[5]).height;
+    //var ss5 = getComputedStyle(calli2[5]).height;
     for( let i = 0 ; i < ame.length ; i ++)
     {
-        //console.log("stylt ls: "+ss5);
-        //console.log("style : "+getComputedStyle(calli[i]).height);
+        
         heightpeko[i] = getComputedStyle(calli[i]).height;
         calli[i].setAttribute("style","height: 0px");
     }   
@@ -41,49 +39,49 @@ function gura(self)
     }
     else
     {
-        Peko(kiara[ina],heightpeko[ina]);
+        Peko(kiara[ina],0);
         kiara[ina] = false; 
     }
-    
-
-/*
-    if( kiara[ina] != true )
-    {
-        calli[ina].classList.remove("clicked");
-        kiara[ina] = true; 
-        console.log("hi");
-    }
-    else
-    {
-        calli[ina].classList.add("clicked");
-        kiara[ina] = false; 
-    }
-    //console.log(kiara[i]);
-
-*/
-
-    
 
 }
 
 
 function Peko(bool,pasen) 
 {
-    j=0;
-    var myvar  = setInterval(function()
-    {        
-       if(parseFloat(j)>parseFloat(pasen))
-       {
-        console.log("ok");
-        clearInterval(myvar);
-       }
-        calli[ina].setAttribute("style","height:"+j+"px");
-        //console.log("style : "+calli[ina].clientHeight);
-        //console.log("hei : "+heightpeko[ina]);
-        j++
-
-    }, 2);
-    
+    if( bool !=true )
+    {
+        j[ina]=0;
+        var myvar  = setInterval(function()
+        {        
+            if(parseFloat(j[ina])>parseFloat(pasen))
+            {
+                console.log("ok open");
+                clearInterval(myvar);
+            }
+            calli[ina].setAttribute("style","height:"+j[ina]+"px");
+            //console.log("style : "+calli[ina].clientHeight);
+            //console.log("hei : "+heightpeko[ina]);
+            j[ina]++
+            
+        }, 1);
+    }
+    else 
+    {
+        
+        var myvar  = setInterval(function()
+        {        
+            if(parseFloat(j[ina])<=parseFloat(pasen))
+            {
+                console.log("ok close");
+                clearInterval(myvar);
+            }
+            calli[ina].setAttribute("style","height:"+j[ina]+"px");
+            //console.log("hei : "+j);
+            j[ina]--;
+            
+        }, 1);
+    }
+        
 }
 
 function stopp()
