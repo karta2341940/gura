@@ -1,21 +1,8 @@
-body
-{
-    height: 100%;
-}
-.row-tablet
-{
-    height: 100%;
-}
-.row-desktop
-{
-    height: 100%;
-}
 .block
 {
     margin: 10px auto;
     text-align: center;
     width :80%;
-    height: 100%;
     background-color: #ffffff;
     border-radius:10px;
 }
@@ -25,12 +12,10 @@ body
     font-size: 14pt ;
     color: #ffffff;
     text-decoration: none;
-    
 }
 
 .ls
 {
-    
     background-color: #007C9D;
     margin: 5px auto;
     border-radius:10px;
@@ -42,8 +27,6 @@ body
 li
 {
     list-style: none;
-    
-    
 }
 
 .outside
@@ -58,6 +41,7 @@ li
     background-color: #F0B31C;
     border-radius:10px;
     padding: 1px;
+    
 }
 
 
@@ -68,11 +52,12 @@ li
     margin: 1rem auto;
 }
 
-.clicked
+
+.list
 {
-    height: 100%;
+    height: auto;
     overflow: hidden;
-    /*
-    display: none;
-    */
+    transition:height 1s ;
+    transition-timing-function:cubic-bezier(0.75, 0, 0.53, 1.1);
+   
 }
