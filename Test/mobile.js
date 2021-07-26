@@ -68,24 +68,26 @@ function Peko(bool,pasen)
     }
         
 }
-/*
-document.onresize=function()
+
+window.onresize=function()
 {
-          
+    console.log("modify");
+         
     if(document.body.clientWidth <= 768)
     {
 
         for( let i = 0 ; i < ame.length ; i ++)
         {
-                
+                calli[i].setAttribute("style","height: auto;"); 
                 heightpeko[i] = getComputedStyle(calli[i]).height;
-                calli[i].setAttribute("style","height: 0px");
+                calli[i].setAttribute("style","height: 0px;");
         }   
     }
-            
+    
+         
     
 }
-*/
+
 new function () 
 {
     if(document.body.clientWidth <= 768)
@@ -93,9 +95,21 @@ new function ()
 
         for( let i = 0 ; i < ame.length ; i ++)
         {
-                
+                      
                 heightpeko[i] = getComputedStyle(calli[i]).height;
                 calli[i].setAttribute("style","height: 0px");
         }   
     }
+    /*
+    else 
+    {
+        for( let i = 0 ; i < ame.length ; i ++)
+        {
+            
+            heightpeko[i] = getComputedStyle(calli[i]).height;
+            calli[i].setAttribute("style","height: 0px");
+        } 
+        
+    }
+    */
 }
