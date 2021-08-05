@@ -36,10 +36,11 @@
         margin-bottom: 10px;
         list-style: none;
         text-align: center;
+        line-height: normal !important;
     }
     .ls:hover
     {
-        
+        transition:all 1s;
         background-image: linear-gradient(to right,rgba(212, 229, 239, 0.0),rgba(212, 229, 239, 0.05),rgba(212, 229, 239, 0.09), rgba(212, 229, 239, 0.13),rgba(212, 229, 239, 0.27),rgba(212, 229, 239, 0.35),rgba(212, 229, 239, 0.47),rgba(212, 229, 239, 0.55),rgba(212, 229, 239, 0.69),rgba(212, 229, 239, 0.78),rgba(212, 229, 239, 0.85),rgba(212, 229, 239, 0.91),rgba(212, 229, 239, 0.85),rgba(212, 229, 239, 0.78),rgba(212, 229, 239, 0.69),rgba(212, 229, 239, 0.55),rgba(212, 229, 239, 0.47),rgba(212, 229, 239, 0.35),rgba(212, 229, 239, 0.27),rgba(212, 229, 239, 0.13),rgba(212, 229, 239, 0.09),rgba(212, 229, 239, 0.05),rgba(212, 229, 239, 0.0));
     }
     .al

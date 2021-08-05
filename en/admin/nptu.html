@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+
+    <div>
+        
+
+       
+        <div class="block">
+            
+            <a class="title" title="Office of the President(校長室)" href="https://president.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of the President</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Office of the Vice President(副校長室)" href="https://vicepresident.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of the Vice President</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Office of the Secretariat(秘書室)" href="https://secretary.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of the Secretariat</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Academic Affairs Division(教務處)" href="https://oaa.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Academic Affairs Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+
+        <div class="block">
+            
+            <a class="title" title="Continuing and Extension Education Division(推廣教育中心)" href="https://cec.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Continuing and Extension Education Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Student Affairs Division(學務處)" href="https://staf.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Student Affairs Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+
+        <div class="block">
+            
+            <a class="title" title="General Affairs Division(總務處)" href="https://general.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">General Affairs Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Research and Development Division(研究發展處)" href="https://ord.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Research and Development Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+
+        <div class="block">
+            
+            <a class="title" title="Office of International Affairs(國際事務處)" href="https://oia.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of International Affairs</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Internship and Career Services Division(實習就業輔導處)" href="https://ica.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Internship and Career Services Division</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Office of Personnel(人事室)" href="https://pers.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of Personnel</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+
+        <div class="block">
+            
+            <a class="title" title="Office of Accounting(主計室)" href="https://acc.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of Accounting</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Office of Physical Activities(體育室)" href="https://sport.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Office of Physical Activities</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Library(圖書館)" href="https://library.nptu.edu.tw/Eindex.aspx">
+            <li class = "ls">Library</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+
+        <div class="block">
+            
+            <a class="title" title="Computer and Network Center(計網中心)" href="https://cnc.nptu.edu.tw/index.php?Lang=en">
+            <li class = "ls">Computer and Network Center</li>
+            <div class="underline"></div>    
+            </a>
+
+        </div>
+        
+        <style>
+            
+            .block
+            {
+                margin-top: 30px;
+                margin-left: 25%;
+                margin-right: 20%;
+                height: 50px;
+                width: 30%;
+                text-align: center;
+                list-style: none;
+                float: left;
+            }
+
+        .ls
+        {
+            width: auto;
+        }
+        .title
+        {
+            text-decoration: none;
+            color: #007C9D;
+        }
+        .underline
+        {
+            margin: 0px auto;
+            width: 0px;
+            background-color: rgb(240, 179, 28);
+            height: 5px;
+            transition:all 1s ;
+        }
+    </style>
+
+        <script>
+            let tsmc = document.getElementsByClassName("block");
+            function mtk() 
+            {
+                
+                let x=0;
+                for(let i = 0 ; i < tsmc.length ; i ++ )
+                { 
+                    if( tsmc[i] == this )
+                    {
+                        x=i;
+                    }
+                }
+                let y = parseInt( getComputedStyle(tsmc[x]).width )*0.6;
+                let Du = document.getElementsByClassName("underline");
+                Du[x].setAttribute("style","width: "+y+"px;");
+                console.log(y);
+            }
+            function mtk2() 
+            {
+                let x=0;
+                for(let i = 0 ; i < tsmc.length ; i ++ )
+                { 
+                    if( tsmc[i] == this )
+                    {
+                        x=i;
+                    }
+                }
+                let Du = document.getElementsByClassName("underline");
+                Du[x].setAttribute("style","width: 0px;");
+            }
+            
+            for(let i = 0 ; i < tsmc.length ; i ++)
+            {
+                tsmc[i].addEventListener("mouseenter",mtk);
+                tsmc[i].addEventListener("mouseleave",mtk2);
+            }
+            
+        </script>
+    </div>
+
+    <div class="block" style="margin-bottom: 20px;"></div>
+
+</body>
+</html>

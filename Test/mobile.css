@@ -1,24 +1,30 @@
 .block
 {
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
     width :80%;
     background-color: #ffffff;
     border-radius:10px;
 }
 
+
+
 .al
 {   
     font-size: 14pt ;
     color: #ffffff;
     text-decoration: none;
+    
 }
 
 .ls
 {
     background-color: #007C9D;
-    margin: 5px auto;
+    
+    margin: 10px auto;
+/*
     border-radius:10px;
+*/    
     width :90%;
     padding: 1%;
     height: auto;
@@ -38,8 +44,10 @@ li
 
 .title
 {
-    background-color: #F0B31C;
+    background-color: #f0b31c;
+    /*
     border-radius:10px;
+    */
     padding: 1px;
     
 }
@@ -57,7 +65,7 @@ li
 {
     height: auto;
     overflow: hidden;
-    transition:height 1s ;
+    transition:height 1s;
     transition-timing-function:cubic-bezier(0.75, 0, 0.53, 1.1);
    
 }

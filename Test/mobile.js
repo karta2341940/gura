@@ -83,6 +83,13 @@ window.onresize=function()
                 calli[i].setAttribute("style","height: 0px;");
         }   
     }
+    else 
+    {
+        for( let i = 0 ; i < ame.length ; i ++)
+        {
+                calli[i].setAttribute("style","height: auto;"); 
+        }  
+    }
     
          
     
@@ -100,16 +107,8 @@ new function ()
                 calli[i].setAttribute("style","height: 0px");
         }   
     }
-    /*
-    else 
-    {
-        for( let i = 0 ; i < ame.length ; i ++)
-        {
-            
-            heightpeko[i] = getComputedStyle(calli[i]).height;
-            calli[i].setAttribute("style","height: 0px");
-        } 
-        
-    }
-    */
+    console.log(document.body.clientWidth);
+  
 }
+
+AOS.init();
