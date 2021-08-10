@@ -7,12 +7,12 @@ var j = [];
 
 
 
-function gura(self)
+function gura()
 {
     
     for( let i = 0 ; i <ame.length ; i ++)
     {
-        if( ame[i] == self )
+        if( ame[i] == this )
         {
             ina = i;
             break;
@@ -34,54 +34,24 @@ function gura(self)
 }
 
 
-function Peko(bool,pasen) 
-{
-    if( bool !=true )
-    {
-        j[ina]=0;
-        var myvar  = setInterval(function()
-        {        
-            if(parseFloat(j[ina])>parseFloat(pasen))
-            {
-                console.log("ok open");
-                clearInterval(myvar);
-            }
-            calli[ina].setAttribute("style","height:"+j[ina]+"px");
-            j[ina]++
-            
-        }, 1);
-    }
-    else 
-    {
-        
-        var myvar  = setInterval(function()
-        {        
-            if(parseFloat(j[ina])<=parseFloat(pasen))
-            {
-                console.log("ok close");
-                clearInterval(myvar);
-            }
-            calli[ina].setAttribute("style","height:"+j[ina]+"px");
-            j[ina]--;
-            
-        }, 1);
-    }
-        
-}
-
 window.onresize=function()
 {
     console.log("modify");
          
     if(document.body.clientWidth <= 768)
     {
+        for( let i = 0 ; i < ame.length ; i ++)
+        {
+            ame[i].addEventListener("click",gura);
+        }   
 
         for( let i = 0 ; i < ame.length ; i ++)
         {
-                calli[i].setAttribute("style","height: auto;"); 
-                heightpeko[i] = getComputedStyle(calli[i]).height;
-                calli[i].setAttribute("style","height: 0px;");
+            calli[i].setAttribute("style","height: auto;"); 
+            heightpeko[i] = getComputedStyle(calli[i]).height;
+            calli[i].setAttribute("style","height: 0px;");
         }   
+        
     }
     else 
     {
@@ -99,7 +69,10 @@ new function ()
 {
     if(document.body.clientWidth <= 768)
     {
-
+        for( let i = 0 ; i < ame.length ; i ++)
+        {
+            ame[i].addEventListener("click",gura);
+        } 
         for( let i = 0 ; i < ame.length ; i ++)
         {
                       
