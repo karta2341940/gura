@@ -26,3 +26,28 @@ body
 {
     width: 100vw;
 }
+.row-1
+{
+    width: 100%;
+    height: auto;
+}
+.row-2
+{
+    width: 50%;
+    height: auto;
+}
+.row-3
+{
+    width: 33%;
+    height: auto;
+}
+.row-4
+{
+    width: 25%;
+    height: auto;
+}
+.cube
+{
+    height: 27vw;
+    width: 27vw;
+}
