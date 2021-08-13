@@ -6,7 +6,6 @@ let heightpeko=[];                          //save all value of height in this a
 var j = [];
 
 
-
 function gura()
 {
     

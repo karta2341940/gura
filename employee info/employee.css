@@ -1,0 +1,28 @@
+li
+{
+    list-style: none;
+}
+a
+{
+    
+    color: black;
+    text-decoration: none;
+}
+.ls
+{
+    background-color: aqua;
+    
+}
+.al
+{
+   
+    
+}
+.block
+{
+    width: 50%;
+}
+body
+{
+    width: 100vw;
+}
