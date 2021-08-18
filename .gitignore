@@ -1,4 +1,3 @@
-./.vscode
-./backup.html
-./backup2.html
-./favicon.ico
+.vscode
+favicon.ico
+backup/
