@@ -1,44 +1,5 @@
 <p>負責人更新請至此表單填寫：<a href="https://cnc.nptu.edu.tw/p/423-1007-1571.php?Lang=zh-tw">https://cnc2.nptu.edu.tw/p/423-1007-1571.php?Lang=zh-tw</a><br />
     &nbsp;</p>
-    
-    <script>
-        let s=0;
-        function la(){
-            let private= document.getElementsByClassName("private");
-            let name = document.getElementsByClassName("Name");
-            let mail = document.getElementsByClassName("mail");
-            let phone = document.getElementsByClassName("phone-num");
-            if(s == 0 )
-            {
-                document.getElementById("bt").value="顯示網站負責人資訊";
-                for( let i = 0 ; i < private.length ; i ++ )
-                {
-                    private[i].setAttribute("style","display:none;");
-                }
-                s++;
-            }
-            else if(s != 0)
-            {
-                document.getElementById("bt").value="隱藏網站負責人資訊";
-                for( let i = 0 ; i < private.length ; i ++ )
-                {
-                    private[i].setAttribute("style","display:table;");
-
-                }
-                for( let i = 0 ; i < name.length ; i ++ )
-                {
-                    name[i].setAttribute("style","width:203px;");
-                    mail[i].setAttribute("style","width:198px;");
-                    phone[i].setAttribute("style","width:56px;");
-                }
-                s--;
-            }
-        }
-    </script>
-    <style>
-        
-    </style>
-    <input type="button" value="隱藏網站負責人資訊" onclick="la()" id="bt">
     <div class="table-responsive">
     <table border="1" style="border-style: solid;overflow-x=”auto”">
         <tbody>
@@ -46,20 +7,20 @@
                 <td colspan="8" style="text-align:center; font-size: 32px;">行政單位</td>
             </tr>
             <tr style=" height: 50px; background-color: #D4E5EF;">
-                <th class="serise-number" width="33">序號</th>
-                <th class="site-Name" width="313">網站名稱</th>
-                <th class="old-link" width="191">Epage舊網址</th>
-                <th class="new-link" width="203">RPAGE網址</th>
-                <th class="Name private" width="203">網站負責人</th>
-                <th class="mail private" width="198">Email</th>
-                <th class="phone-num private" width="56">分機</th>
-                <th class="note" width="33">備註</th>
+                <th class="serise-number" width="5%">序號</th>
+                <th class="site-Name" width="25%">網站名稱</th>
+                <th class="old-link" width="35%"><p>Epage舊網址<br /><span style="color:#e74c3c;">(所有五層式網址已停止使用，並</span><span style="color:#e74c3c;">啟用轉址至2022.01.31)</span></p></th>
+                <th class="new-link" width="35%">RPAGE新網址</th>
+                <th class="Name private" width="203px">網站負責人</th>
+                <th class="mail private" width="198px">Email</th>
+                <th class="phone-num private" width="56px">分機</th>
+                <th class="note" width="33px">備註</th>
             </tr>
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E001</td>
                 <td class="site-Name">校首頁</td>
-                <td class="old-link"><a target="_blank" href="http://www.nptu.edu.tw">www.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://www.nptu.edu.tw">www.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://www.nptu.edu.tw" target="_blank">www.nptu.edu.tw</a></td>
+                <td class="new-link">延續使用網址不變</td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -68,8 +29,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E002</td>
                 <td class="site-Name">校首頁英文版</td>
-                <td class="old-link"><a target="_blank" href="http://eng.nptu.edu.tw">eng.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://eng.nptu.edu.tw">eng.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://eng.nptu.edu.tw" target="_blank">eng.nptu.edu.tw</a></td>
+                <td class="new-link">延續使用網址不變</td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -78,8 +39,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E003</td>
                 <td class="site-Name">校長室</td>
-                <td class="old-link"><a target="_blank" href="http://www.president.nptu.edu.tw">www.president.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://president.nptu.edu.tw">president.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.president.nptu.edu.tw" target="_blank">www.president.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://president.nptu.edu.tw" target="_blank">president.nptu.edu.tw</a></td>
                 <td class="Name private">謝熙樺</td>
                 <td class="mail private">hsihua@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10214</td>
@@ -88,8 +49,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E004</td>
                 <td class="site-Name">副校長室</td>
-                <td class="old-link"><a target="_blank" href="http://www.vicepresident.nptu.edu.tw">www.vicepresident.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://vicepresident.nptu.edu.tw">vicepresident.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.vicepresident.nptu.edu.tw" target="_blank">www.vicepresident.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://vicepresident.nptu.edu.tw" target="_blank">vicepresident.nptu.edu.tw</a></td>
                 <td class="Name private">劉純宜</td>
                 <td class="mail private">cherry@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10102</td>
@@ -98,8 +59,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E005</td>
                 <td class="site-Name">秘書室</td>
-                <td class="old-link"><a target="_blank" href="http://www.secretary.nptu.edu.tw">www.secretary.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://secretary.nptu.edu.tw">secretary.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.secretary.nptu.edu.tw" target="_blank">www.secretary.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://secretary.nptu.edu.tw" target="_blank">secretary.nptu.edu.tw</a></td>
                 <td class="Name private">萬俊宏</td>
                 <td class="mail private">wan0924@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10223</td>
@@ -108,8 +69,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E006</td>
                 <td class="site-Name">校務研究辦公室</td>
-                <td class="old-link"><a target="_blank" href="http://www.iro.nptu.edu.tw">www.iro.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://iro.nptu.edu.tw">iro.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.iro.nptu.edu.tw" target="_blank">www.iro.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://iro.nptu.edu.tw" target="_blank">iro.nptu.edu.tw</a></td>
                 <td class="Name private">林姿蓉</td>
                 <td class="mail private">annielin2009@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10108</td>
@@ -118,8 +79,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E007</td>
                 <td class="site-Name">性別平等教育委員會</td>
-                <td class="old-link"><a target="_blank" href="http://www.geec.nptu.edu.tw ">www.geec.nptu.edu.tw </a></td>
-                <td class="new-link"><a target="_blank" href="https://geec.nptu.edu.tw ">geec.nptu.edu.tw </a></td>
+                <td class="old-link"><a href="http://www.geec.nptu.edu.tw " target="_blank">www.geec.nptu.edu.tw </a></td>
+                <td class="new-link"><a href="https://geec.nptu.edu.tw " target="_blank">geec.nptu.edu.tw </a></td>
                 <td class="Name private">郭明宗</td>
                 <td class="mail private">genius2567@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10224</td>
@@ -128,8 +89,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E008</td>
                 <td class="site-Name">教務處</td>
-                <td class="old-link"><a target="_blank" href="http://www.oaa.nptu.edu.tw">www.oaa.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://oaa.nptu.edu.tw">oaa.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.oaa.nptu.edu.tw" target="_blank">www.oaa.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://oaa.nptu.edu.tw" target="_blank">oaa.nptu.edu.tw</a></td>
                 <td class="Name private">吳季穎,<br />黃淑婷</td>
                 <td class="mail private">iamwind@mail.nptu.edu.tw,<br />shun@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11305,<br />11002</td>
@@ -138,8 +99,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E009</td>
                 <td class="site-Name">課務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.cud.nptu.edu.tw">www.cud.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cud.nptu.edu.tw">cud.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cud.nptu.edu.tw" target="_blank">www.cud.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cud.nptu.edu.tw" target="_blank">cud.nptu.edu.tw</a></td>
                 <td class="Name private">馮雅筠</td>
                 <td class="mail private">zobaty@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11106</td>
@@ -148,8 +109,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E010</td>
                 <td class="site-Name">註冊組</td>
-                <td class="old-link"><a target="_blank" href="http://www.reg.nptu.edu.tw">www.reg.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://reg.nptu.edu.tw">reg.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.reg.nptu.edu.tw" target="_blank">www.reg.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://reg.nptu.edu.tw" target="_blank">reg.nptu.edu.tw</a></td>
                 <td class="Name private">邱羽翎,<br />蔣佩純</td>
                 <td class="mail private">yuling@mail.nptu.edu.tw,<br />money@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11202,<br />11203</td>
@@ -158,8 +119,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E011</td>
                 <td class="site-Name">綜合業務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.gaad.nptu.edu.tw">www.gaad.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://gaad.nptu.edu.tw">gaad.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.gaad.nptu.edu.tw" target="_blank">www.gaad.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://gaad.nptu.edu.tw" target="_blank">gaad.nptu.edu.tw</a></td>
                 <td class="Name private">吳季穎,<br />陳思帆</td>
                 <td class="mail private">iamwind@mail.nptu.edu.tw,<br />szufan010@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11305,<br/>11302</td>
@@ -168,8 +129,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E012</td>
                 <td class="site-Name">教學發展組</td>
-                <td class="old-link"><a target="_blank" href="http://www.tld.nptu.edu.tw">www.tld.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://tld.nptu.edu.tw">tld.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.tld.nptu.edu.tw" target="_blank">www.tld.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://tld.nptu.edu.tw" target="_blank">tld.nptu.edu.tw</a></td>
                 <td class="Name private">吳佩樺</td>
                 <td class="mail private">pepe7077@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11503</td>
@@ -178,8 +139,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E013</td>
                 <td class="site-Name">教學資源中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.ctl.nptu.edu.tw">www.ctl.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ctl.nptu.edu.tw">ctl.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ctl.nptu.edu.tw" target="_blank">www.ctl.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ctl.nptu.edu.tw" target="_blank">ctl.nptu.edu.tw</a></td>
                 <td class="Name private">楊雅淇</td>
                 <td class="mail private">yachi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11601</td>
@@ -188,8 +149,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E014</td>
                 <td class="site-Name">屏東大學特色大學試辦計畫</td>
-                <td class="old-link"><a target="_blank" href="http://www.ptugsi.nptu.edu.tw">www.ptugsi.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ptugsi.nptu.edu.tw">ptugsi.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ptugsi.nptu.edu.tw" target="_blank">www.ptugsi.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ptugsi.nptu.edu.tw" target="_blank">ptugsi.nptu.edu.tw</a></td>
                 <td class="Name private">楊雅淇</td>
                 <td class="mail private">yachi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11601</td>
@@ -198,8 +159,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E015</td>
                 <td class="site-Name">推廣教育中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.cec.nptu.edu.tw">www.cec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cec.nptu.edu.tw">cec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cec.nptu.edu.tw" target="_blank">www.cec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cec.nptu.edu.tw" target="_blank">cec.nptu.edu.tw</a></td>
                 <td class="Name private">蔡宛妤</td>
                 <td class="mail private">ariel0811@mail.nptu.edu.tw</td>
                 <td class="phone-num private">18104</td>
@@ -208,8 +169,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E016</td>
                 <td class="site-Name">專案業務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.pos.nptu.edu.tw">www.pos.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://pos.nptu.edu.tw">pos.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.pos.nptu.edu.tw" target="_blank">www.pos.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://pos.nptu.edu.tw" target="_blank">pos.nptu.edu.tw</a></td>
                 <td class="Name private">陳崑屏</td>
                 <td class="mail private">allen57.chen@mail.nptu.edu.tw</td>
                 <td class="phone-num private">18003</td>
@@ -218,8 +179,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E017</td>
                 <td class="site-Name">進修教學組</td>
-                <td class="old-link"><a target="_blank" href="http://www.aas.nptu.edu.tw">www.aas.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://aas.nptu.edu.tw">aas.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.aas.nptu.edu.tw" target="_blank">www.aas.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://aas.nptu.edu.tw" target="_blank">aas.nptu.edu.tw</a></td>
                 <td class="Name private">李玉潔</td>
                 <td class="mail private">luj@mail.nptu.edu.tw</td>
                 <td class="phone-num private">18204</td>
@@ -228,8 +189,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E018</td>
                 <td class="site-Name">學務處</td>
-                <td class="old-link"><a target="_blank" href="http://www.staf.nptu.edu.tw">www.staf.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://staf.nptu.edu.tw">staf.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.staf.nptu.edu.tw" target="_blank">www.staf.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://staf.nptu.edu.tw" target="_blank">staf.nptu.edu.tw</a></td>
                 <td class="Name private">劉純如</td>
                 <td class="mail private">staf@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12001</td>
@@ -238,8 +199,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E019</td>
                 <td class="site-Name">生活輔導組</td>
-                <td class="old-link"><a target="_blank" href="http://www.staf-life.nptu.edu.tw">www.staf-life.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://staf-life.nptu.edu.tw">staf-life.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.staf-life.nptu.edu.tw" target="_blank">www.staf-life.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://staf-life.nptu.edu.tw" target="_blank">staf-life.nptu.edu.tw</a></td>
                 <td class="Name private">蔡翠蓮</td>
                 <td class="mail private">tsuilien@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12414</td>
@@ -248,8 +209,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E020</td>
                 <td class="site-Name">衛生保健組</td>
-                <td class="old-link"><a target="_blank" href="http://www.staf-health.nptu.edu.tw">www.staf-health.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://staf-health.nptu.edu.tw">staf-health.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.staf-health.nptu.edu.tw" target="_blank">www.staf-health.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://staf-health.nptu.edu.tw" target="_blank">staf-health.nptu.edu.tw</a></td>
                 <td class="Name private">劉品妍</td>
                 <td class="mail private">melin@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12301</td>
@@ -258,8 +219,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E021</td>
                 <td class="site-Name">軍訓暨校安中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.mil.nptu.edu.tw">www.mil.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mil.nptu.edu.tw">mil.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mil.nptu.edu.tw" target="_blank">www.mil.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mil.nptu.edu.tw" target="_blank">mil.nptu.edu.tw</a></td>
                 <td class="Name private">林士方</td>
                 <td class="mail private">a820730@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12104</td>
@@ -268,8 +229,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E022</td>
                 <td class="site-Name">學生活動發展組</td>
-                <td class="old-link"><a target="_blank" href="http://www.act.nptu.edu.tw">www.act.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://act.nptu.edu.tw">act.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.act.nptu.edu.tw" target="_blank">www.act.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://act.nptu.edu.tw" target="_blank">act.nptu.edu.tw</a></td>
                 <td class="Name private">顏文成</td>
                 <td class="mail private">lavakaw@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12204</td>
@@ -278,8 +239,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E023</td>
                 <td class="site-Name">學生諮商中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.counsel-s.nptu.edu.tw">www.counsel-s.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://counsel-s.nptu.edu.tw">counsel-s.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.counsel-s.nptu.edu.tw" target="_blank">www.counsel-s.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://counsel-s.nptu.edu.tw" target="_blank">counsel-s.nptu.edu.tw</a></td>
                 <td class="Name private">林玉芳</td>
                 <td class="mail private">mail034@mail.nptu.edu.tw</td>
                 <td class="phone-num private">25106</td>
@@ -288,8 +249,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E024</td>
                 <td class="site-Name">原住民族學生資源中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.isrc.nptu.edu.tw">www.isrc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://isrc.nptu.edu.tw">isrc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.isrc.nptu.edu.tw" target="_blank">www.isrc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://isrc.nptu.edu.tw" target="_blank">isrc.nptu.edu.tw</a></td>
                 <td class="Name private">戴筱蓁</td>
                 <td class="mail private">hana@mail.nptu.edu.tw</td>
                 <td class="phone-num private">23011</td>
@@ -298,8 +259,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E025</td>
                 <td class="site-Name">總務處</td>
-                <td class="old-link"><a target="_blank" href="http://www.general.nptu.edu.tw">www.general.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://general.nptu.edu.tw">general.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.general.nptu.edu.tw" target="_blank">www.general.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://general.nptu.edu.tw" target="_blank">general.nptu.edu.tw</a></td>
                 <td class="Name private">張瓊尹</td>
                 <td class="mail private">ina@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13001</td>
@@ -308,8 +269,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E026</td>
                 <td class="site-Name">文書組</td>
-                <td class="old-link"><a target="_blank" href="http://www.cd.nptu.edu.tw">www.cd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cd.nptu.edu.tw">cd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cd.nptu.edu.tw" target="_blank">www.cd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cd.nptu.edu.tw" target="_blank">cd.nptu.edu.tw</a></td>
                 <td class="Name private">溫君怡</td>
                 <td class="mail private">chunyi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13103</td>
@@ -318,8 +279,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E027</td>
                 <td class="site-Name">事務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.gen.nptu.edu.tw">www.gen.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://gen.nptu.edu.tw">gen.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.gen.nptu.edu.tw" target="_blank">www.gen.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://gen.nptu.edu.tw" target="_blank">gen.nptu.edu.tw</a></td>
                 <td class="Name private">蕭秀茹</td>
                 <td class="mail private">zu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13204</td>
@@ -328,8 +289,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E028</td>
                 <td class="site-Name">出納組</td>
-                <td class="old-link"><a target="_blank" href="http://www.cash.nptu.edu.tw">www.cash.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cash.nptu.edu.tw">cash.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cash.nptu.edu.tw" target="_blank">www.cash.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cash.nptu.edu.tw" target="_blank">cash.nptu.edu.tw</a></td>
                 <td class="Name private">滕學臣</td>
                 <td class="mail private">tsc1019@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13305</td>
@@ -338,8 +299,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E029</td>
                 <td class="site-Name">營繕組</td>
-                <td class="old-link"><a target="_blank" href="http://www.scm.nptu.edu.tw">www.scm.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://scm.nptu.edu.tw">scm.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.scm.nptu.edu.tw" target="_blank">www.scm.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://scm.nptu.edu.tw" target="_blank">scm.nptu.edu.tw</a></td>
                 <td class="Name private">郭泰億</td>
                 <td class="mail private">terrykho@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13409</td>
@@ -348,8 +309,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E030</td>
                 <td class="site-Name">保管組</td>
-                <td class="old-link"><a target="_blank" href="http://www.pmd.nptu.edu.tw">www.pmd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://pmd.nptu.edu.tw">pmd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.pmd.nptu.edu.tw" target="_blank">www.pmd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://pmd.nptu.edu.tw" target="_blank">pmd.nptu.edu.tw</a></td>
                 <td class="Name private">賴振豐</td>
                 <td class="mail private">feng@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13502</td>
@@ -358,8 +319,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E031</td>
                 <td class="site-Name">環安組</td>
-                <td class="old-link"><a target="_blank" href="http://www.env.nptu.edu.tw">www.env.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://env.nptu.edu.tw">env.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.env.nptu.edu.tw" target="_blank">www.env.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://env.nptu.edu.tw" target="_blank">env.nptu.edu.tw</a></td>
                 <td class="Name private">胡明燦,<br />王立宏,<br />徐愛俐</td>
                 <td class="mail private">lihung@mail.nptu.edu.tw,<br />hmt@mail.nptu.edu.tw,<br />abcd19866@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13900,<br />13902,<br />13901</td>
@@ -368,8 +329,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E033</td>
                 <td class="site-Name">研究發展處</td>
-                <td class="old-link"><a target="_blank" href="http://ord.nptu.edu.tw">ord.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ord.nptu.edu.tw">ord.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://ord.nptu.edu.tw/index.aspx" target="_blank">ord.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://ord.nptu.edu.tw/index.aspx" target="_blank">ord.nptu.edu.tw</a></td>
                 <td class="Name private">楊瑋銘</td>
                 <td class="mail private">wmyang@mail.nptu.edu.tw</td>
                 <td class="phone-num private">14001</td>
@@ -378,8 +339,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E034</td>
                 <td class="site-Name">技術合作組</td>
-                <td class="old-link"><a target="_blank" href="http://www.tcs.nptu.edu.tw">www.tcs.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://tcs.nptu.edu.tw">tcs.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.tcs.nptu.edu.tw" target="_blank">www.tcs.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://tcs.nptu.edu.tw" target="_blank">tcs.nptu.edu.tw</a></td>
                 <td class="Name private">蔡淑娟,<br />傅屏豐</td>
                 <td class="mail private">cherry107@mail.nptu.edu.tw,<br />god7384230@mail.nptu.edu.tw</td>
                 <td class="phone-num private">14101,<br />14104</td>
@@ -388,8 +349,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E035</td>
                 <td class="site-Name">學術發展組</td>
-                <td class="old-link"><a target="_blank" href="http://www.ads.nptu.edu.tw">www.ads.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ads.nptu.edu.tw">ads.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ads.nptu.edu.tw" target="_blank">www.ads.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ads.nptu.edu.tw" target="_blank">ads.nptu.edu.tw</a></td>
                 <td class="Name private">汪昕儀,<br />林永彩</td>
                 <td class="mail private">weng800724@mail.nptu.edu.tw,<br />yungtsai@mail.nptu.edu.tw</td>
                 <td class="phone-num private">14304,<br />14303</td>
@@ -398,8 +359,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E036</td>
                 <td class="site-Name">創新育成中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.iic.nptu.edu.tw">www.iic.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://iic.nptu.edu.tw">iic.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.iic.nptu.edu.tw" target="_blank">www.iic.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://iic.nptu.edu.tw" target="_blank">iic.nptu.edu.tw</a></td>
                 <td class="Name private">李胤儀</td>
                 <td class="mail private">lyinyi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">7214975</td>
@@ -408,8 +369,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E037</td>
                 <td class="site-Name">國際事務處</td>
-                <td class="old-link"><a target="_blank" href="http://www.oia.nptu.edu.tw">www.oia.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://oia.nptu.edu.tw">oia.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.oia.nptu.edu.tw" target="_blank">www.oia.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://oia.nptu.edu.tw" target="_blank">oia.nptu.edu.tw</a></td>
                 <td class="Name private">李宗訓</td>
                 <td class="mail private">edenlee@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17001</td>
@@ -418,8 +379,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E038</td>
                 <td class="site-Name">大陸事務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.dcma.nptu.edu.tw">www.dcma.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://dcma.nptu.edu.tw">dcma.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.dcma.nptu.edu.tw" target="_blank">www.dcma.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://dcma.nptu.edu.tw" target="_blank">dcma.nptu.edu.tw</a></td>
                 <td class="Name private">莊順博</td>
                 <td class="mail private">shunpo@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17201</td>
@@ -428,8 +389,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E039</td>
                 <td class="site-Name">國際學生組</td>
-                <td class="old-link"><a target="_blank" href="http://www.oiais.nptu.edu.tw">www.oiais.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://oiais.nptu.edu.tw">oiais.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.oiais.nptu.edu.tw" target="_blank">www.oiais.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://oiais.nptu.edu.tw" target="_blank">oiais.nptu.edu.tw</a></td>
                 <td class="Name private">林桂禎</td>
                 <td class="mail private">belinda168@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17102</td>
@@ -438,8 +399,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E040</td>
                 <td class="site-Name">國際合作組</td>
-                <td class="old-link"><a target="_blank" href="http://www.ccd.nptu.edu.tw">www.ccd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ccd.nptu.edu.tw">ccd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ccd.nptu.edu.tw" target="_blank">www.ccd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ccd.nptu.edu.tw" target="_blank">ccd.nptu.edu.tw</a></td>
                 <td class="Name private">黃雅萍</td>
                 <td class="mail private">yph@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17301</td>
@@ -448,8 +409,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E041</td>
                 <td class="site-Name">東南亞發展中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.sadc.nptu.edu.tw">www.sadc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://sadc.nptu.edu.tw">sadc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.sadc.nptu.edu.tw" target="_blank">www.sadc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://sadc.nptu.edu.tw" target="_blank">sadc.nptu.edu.tw</a></td>
                 <td class="Name private">李盈穎</td>
                 <td class="mail private">lee@mail.nptu.edu.tw</td>
                 <td class="phone-num private">24001,<br />17401</td>
@@ -458,8 +419,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E042</td>
                 <td class="site-Name">華語教學中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.clc.nptu.edu.tw">www.clc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://clc.nptu.edu.tw">clc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.clc.nptu.edu.tw" target="_blank">www.clc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://clc.nptu.edu.tw" target="_blank">clc.nptu.edu.tw</a></td>
                 <td class="Name private">蔡秉昀</td>
                 <td class="mail private">apings@mail.nptu.edu.tw</td>
                 <td class="phone-num private">24002</td>
@@ -468,8 +429,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E043</td>
                 <td class="site-Name">實習就業輔導處</td>
-                <td class="old-link"><a target="_blank" href="http://www.ica.nptu.edu.tw">www.ica.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ica.nptu.edu.tw">ica.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ica.nptu.edu.tw" target="_blank">www.ica.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ica.nptu.edu.tw" target="_blank">ica.nptu.edu.tw</a></td>
                 <td class="Name private">張惠美</td>
                 <td class="mail private">tipos@mail.nptu.edu.tw</td>
                 <td class="phone-num private">16101</td>
@@ -478,8 +439,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E044</td>
                 <td class="site-Name">職涯發展與輔導組</td>
-                <td class="old-link"><a target="_blank" href="http://www.career.nptu.edu.tw">www.career.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://career.nptu.edu.tw">career.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.career.nptu.edu.tw" target="_blank">www.career.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://career.nptu.edu.tw" target="_blank">career.nptu.edu.tw</a></td>
                 <td class="Name private">吳碧如</td>
                 <td class="mail private">anna@mail.nptu.edu.tw</td>
                 <td class="phone-num private">16100</td>
@@ -488,8 +449,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E045</td>
                 <td class="site-Name">校友服務組</td>
-                <td class="old-link"><a target="_blank" href="http://www.alumni.nptu.edu.tw">www.alumni.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://alumni.nptu.edu.tw">alumni.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.alumni.nptu.edu.tw" target="_blank">www.alumni.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://alumni.nptu.edu.tw" target="_blank">alumni.nptu.edu.tw</a></td>
                 <td class="Name private">沈郁娟</td>
                 <td class="mail private">f0911728@mail.nptu.edu.tw</td>
                 <td class="phone-num private">16306</td>
@@ -498,8 +459,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E046</td>
                 <td class="site-Name">校友之家</td>
-                <td class="old-link"><a target="_blank" href="http://www.hoa.nptu.edu.tw">www.hoa.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hoa.nptu.edu.tw">hoa.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hoa.nptu.edu.tw" target="_blank">www.hoa.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hoa.nptu.edu.tw" target="_blank">hoa.nptu.edu.tw</a></td>
                 <td class="Name private">吳茉朱</td>
                 <td class="mail private">mochu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">16305</td>
@@ -508,8 +469,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E047</td>
                 <td class="site-Name">人事室</td>
-                <td class="old-link"><a target="_blank" href="http://www.pers.nptu.edu.tw">www.pers.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://pers.nptu.edu.tw">pers.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.pers.nptu.edu.tw" target="_blank">www.pers.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://pers.nptu.edu.tw" target="_blank">pers.nptu.edu.tw</a></td>
                 <td class="Name private">許欣琪</td>
                 <td class="mail private">jadey0302@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10304</td>
@@ -518,8 +479,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E048</td>
                 <td class="site-Name">主計室</td>
-                <td class="old-link"><a target="_blank" href="http://www.acc.nptu.edu.tw">www.acc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://acc.nptu.edu.tw">acc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.acc.nptu.edu.tw" target="_blank">www.acc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://acc.nptu.edu.tw" target="_blank">acc.nptu.edu.tw</a></td>
                 <td class="Name private">陳碩鴻</td>
                 <td class="mail private">joychen@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10407</td>
@@ -528,8 +489,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E049</td>
                 <td class="site-Name">體育室</td>
-                <td class="old-link"><a target="_blank" href="http://www.sport.nptu.edu.tw">www.sport.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://sport.nptu.edu.tw">sport.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.sport.nptu.edu.tw" target="_blank">www.sport.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://sport.nptu.edu.tw" target="_blank">sport.nptu.edu.tw</a></td>
                 <td class="Name private">陳美媛</td>
                 <td class="mail private">linda@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10511</td>
@@ -538,8 +499,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E050</td>
                 <td class="site-Name">圖書館(公告用)</td>
-                <td class="old-link"><a target="_blank" href="http://news.library.nptu.edu.tw">news.library.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://libweb.nptu.edu.tw">libweb.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://news.library.nptu.edu.tw" target="_blank">news.library.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://libweb.nptu.edu.tw" target="_blank">libweb.nptu.edu.tw</a></td>
                 <td class="Name private">黃元永</td>
                 <td class="mail private">timhuang@mail.nptu.edu.tw</td>
                 <td class="phone-num private">15202</td>
@@ -548,8 +509,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E051</td>
                 <td class="site-Name">計算機與網路中心</td>
-                <td class="old-link"><a target="_blank" href="http://cnc.nptu.edu.tw">cnc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cnc.nptu.edu.tw">cnc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://cnc.nptu.edu.tw/index.aspx" target="_blank">cnc.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://cnc.nptu.edu.tw/index.aspx" target="_blank">cnc.nptu.edu.tw</a></td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -561,8 +522,8 @@
             <tr style="height: 50px;background-color: #D4E5EF;">
                 <th class="serise-number">序號</th>
                 <th class="site-Name">網站名稱</th>
-                <th class="old-link">Epage舊網址</th>
-                <th class="new-link">RPAGE網址</th>
+                <th class="old-link">Epage舊網址<br />
+                <sp class="new-link"an style="color:#e74c3c;">(所有五層式網址已停止使用，並</sp><span style="color:#e74c3c;">啟用轉址至2022.01.31)</span></th>
                 <th class="Name private">網站負責人</th>
                 <th class="mail private">Email</th>
                 <th class="phone-num private">分機</th>
@@ -571,8 +532,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E055</td>
                 <td class="site-Name">大武山學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.dawu.nptu.edu.tw">www.dawu.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://dawu.nptu.edu.tw">dawu.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.dawu.nptu.edu.tw" target="_blank">www.dawu.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://dawu.nptu.edu.tw" target="_blank">dawu.nptu.edu.tw</a></td>
                 <td class="Name private">李怡璇</td>
                 <td class="mail private">enjoy1438@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27004</td>
@@ -581,8 +542,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E054</td>
                 <td class="site-Name">博雅教育中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.gec.nptu.edu.tw">www.gec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://gec.nptu.edu.tw">gec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.gec.nptu.edu.tw" target="_blank">www.gec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://gec.nptu.edu.tw" target="_blank">gec.nptu.edu.tw</a></td>
                 <td class="Name private">吳玲慧</td>
                 <td class="mail private">linw@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27001</td>
@@ -591,8 +552,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E056</td>
                 <td class="site-Name">共同教育中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.geccce.nptu.edu.tw">www.geccce.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://geccce.nptu.edu.tw">geccce.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.geccce.nptu.edu.tw" target="_blank">www.geccce.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://geccce.nptu.edu.tw" target="_blank">geccce.nptu.edu.tw</a></td>
                 <td class="Name private">黃靜瑜</td>
                 <td class="mail private">chingyu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27002</td>
@@ -601,8 +562,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E057</td>
                 <td class="site-Name">跨領域學程中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.cis.nptu.edu.tw">www.cis.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cis.nptu.edu.tw">cis.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cis.nptu.edu.tw" target="_blank">www.cis.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cis.nptu.edu.tw" target="_blank">cis.nptu.edu.tw</a></td>
                 <td class="Name private">陳靜怡,<br />謝皓軒</td>
                 <td class="mail private">jychen@mail.nptu.edu.tw,<br />hhhsieh@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27302,<br />27501</td>
@@ -611,8 +572,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E058</td>
                 <td class="site-Name">EMI發展中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.emi.nptu.edu.tw">www.emi.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://emi.nptu.edu.tw">emi.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.emi.nptu.edu.tw" target="_blank">www.emi.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://emi.nptu.edu.tw" target="_blank">emi.nptu.edu.tw</a></td>
                 <td class="Name private">林弋凱(共同教育中心)</td>
                 <td class="mail private">wellgod@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27102</td>
@@ -621,8 +582,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E131</td>
                 <td class="site-Name">大武山社會實踐推動中心</td>
-                <td class="old-link"><a target="_blank" href="http://usr.nptu.edu.tw">usr.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://usr.nptu.edu.tw">usr.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://usr.nptu.edu.tw" target="_blank">usr.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://usr.nptu.edu.tw/index.aspx" target="_blank">usr.nptu.edu.tw</a></td>
                 <td class="Name private">黃雅莉,<br/>謝皓軒</td>
                 <td class="mail private">ylhuang@mail.nptu.edu.tw,<br/>hhhsieh@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27502,<br/>27501</td>
@@ -631,8 +592,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E059</td>
                 <td class="site-Name">師資培育中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.cte.nptu.edu.tw">www.cte.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cte.nptu.edu.tw">cte.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cte.nptu.edu.tw" target="_blank">www.cte.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cte.nptu.edu.tw" target="_blank">cte.nptu.edu.tw</a></td>
                 <td class="Name private">林冠儀</td>
                 <td class="mail private">st046122@mail.nptu.edu.tw</td>
                 <td class="phone-num private">22103</td>
@@ -641,8 +602,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E060</td>
                 <td class="site-Name">管理學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.ccm.nptu.edu.tw">www.ccm.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ccm.nptu.edu.tw">ccm.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ccm.nptu.edu.tw" target="_blank">www.ccm.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ccm.nptu.edu.tw" target="_blank">ccm.nptu.edu.tw</a></td>
                 <td class="Name private">邱怡廷</td>
                 <td class="mail private">ccm@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32001</td>
@@ -651,8 +612,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E061</td>
                 <td class="site-Name">商業自動化與管理學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.cam.nptu.edu.tw">www.cam.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cam.nptu.edu.tw">cam.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cam.nptu.edu.tw" target="_blank">www.cam.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cam.nptu.edu.tw" target="_blank">cam.nptu.edu.tw</a></td>
                 <td class="Name private">李書華</td>
                 <td class="mail private">cam@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32101</td>
@@ -661,8 +622,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E062</td>
                 <td class="site-Name">行銷與流通管理學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.mdm.nptu.edu.tw">www.mdm.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mdm.nptu.edu.tw">mdm.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mdm.nptu.edu.tw" target="_blank">www.mdm.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mdm.nptu.edu.tw" target="_blank">mdm.nptu.edu.tw</a></td>
                 <td class="Name private">林以凌</td>
                 <td class="mail private">ling@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32202</td>
@@ -671,8 +632,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E063</td>
                 <td class="site-Name">休閒事業經營學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.leisure.nptu.edu.tw">www.leisure.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://leisure.nptu.edu.tw">leisure.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.leisure.nptu.edu.tw" target="_blank">www.leisure.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://leisure.nptu.edu.tw" target="_blank">leisure.nptu.edu.tw</a></td>
                 <td class="Name private">林瑜蔚</td>
                 <td class="mail private">leisure@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32301</td>
@@ -681,8 +642,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E064</td>
                 <td class="site-Name">不動產經營學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.rem.nptu.edu.tw">www.rem.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://rem.nptu.edu.tw">rem.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.rem.nptu.edu.tw" target="_blank">www.rem.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://rem.nptu.edu.tw" target="_blank">rem.nptu.edu.tw</a></td>
                 <td class="Name private">周思伃</td>
                 <td class="mail private">remw@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32401</td>
@@ -691,8 +652,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E065</td>
                 <td class="site-Name">企業管理學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.mba.nptu.edu.tw">www.mba.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mba.nptu.edu.tw">mba.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mba.nptu.edu.tw" target="_blank">www.mba.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mba.nptu.edu.tw" target="_blank">mba.nptu.edu.tw</a></td>
                 <td class="Name private">許如瑤</td>
                 <td class="mail private">baman@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32502</td>
@@ -701,8 +662,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E066</td>
                 <td class="site-Name">國際貿易學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.trade.nptu.edu.tw">www.trade.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://business.nptu.edu.tw">business.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.trade.nptu.edu.tw" target="_blank">www.trade.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://business.nptu.edu.tw" target="_blank">business.nptu.edu.tw</a></td>
                 <td class="Name private">葉憶雯</td>
                 <td class="mail private">trade@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32701</td>
@@ -711,8 +672,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E067</td>
                 <td class="site-Name">財務金融學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.finance.nptu.edu.tw">www.finance.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://finance.nptu.edu.tw">finance.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.finance.nptu.edu.tw" target="_blank">www.finance.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://finance.nptu.edu.tw" target="_blank">finance.nptu.edu.tw</a></td>
                 <td class="Name private">陳敏鈴</td>
                 <td class="mail private">finance@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32801</td>
@@ -721,8 +682,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E068</td>
                 <td class="site-Name">會計學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.accd.nptu.edu.tw">www.accd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://accd.nptu.edu.tw">accd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.accd.nptu.edu.tw" target="_blank">www.accd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://accd.nptu.edu.tw" target="_blank">accd.nptu.edu.tw</a></td>
                 <td class="Name private">許鈺涵</td>
                 <td class="mail private">accd@mail.nptu.edu.tw,<br />clhsu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">32901</td>
@@ -731,8 +692,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E070</td>
                 <td class="site-Name">資訊學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.ccs.nptu.edu.tw">www.ccs.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ccs.nptu.edu.tw">ccs.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ccs.nptu.edu.tw" target="_blank">www.ccs.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ccs.nptu.edu.tw" target="_blank">ccs.nptu.edu.tw</a></td>
                 <td class="Name private">邱瑋苓</td>
                 <td class="mail private">skypink10@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34006</td>
@@ -741,8 +702,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E071</td>
                 <td class="site-Name">電腦與通訊學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.com.nptu.edu.tw">www.com.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://com.nptu.edu.tw">com.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.com.nptu.edu.tw" target="_blank">www.com.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://com.nptu.edu.tw" target="_blank">com.nptu.edu.tw</a></td>
                 <td class="Name private">何淑嬌</td>
                 <td class="mail private">comweb@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34101</td>
@@ -751,8 +712,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E072</td>
                 <td class="site-Name">資訊工程學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.csie.nptu.edu.tw">www.csie.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://csie.nptu.edu.tw">csie.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.csie.nptu.edu.tw" target="_blank">www.csie.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://csie.nptu.edu.tw" target="_blank">csie.nptu.edu.tw</a></td>
                 <td class="Name private">黃秋菊</td>
                 <td class="mail private">csie@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34201</td>
@@ -761,8 +722,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E073</td>
                 <td class="site-Name">資訊科學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.cs.nptu.edu.tw">www.cs.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cs.nptu.edu.tw">cs.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cs.nptu.edu.tw" target="_blank">www.cs.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cs.nptu.edu.tw" target="_blank">cs.nptu.edu.tw</a></td>
                 <td class="Name private">沈俊宏</td>
                 <td class="mail private">ptdola@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34301</td>
@@ -771,8 +732,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E074</td>
                 <td class="site-Name">資訊管理學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.mis.nptu.edu.tw">www.mis.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mis.nptu.edu.tw">mis.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mis.nptu.edu.tw" target="_blank">www.mis.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mis.nptu.edu.tw" target="_blank">mis.nptu.edu.tw</a></td>
                 <td class="Name private">任儀梅</td>
                 <td class="mail private">jenyimei@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34501</td>
@@ -781,8 +742,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E075</td>
                 <td class="site-Name">智慧機器人學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.intersci.nptu.edu.tw">www.intersci.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://intersci.nptu.edu.tw">intersci.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.intersci.nptu.edu.tw" target="_blank">www.intersci.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://intersci.nptu.edu.tw" target="_blank">intersci.nptu.edu.tw</a></td>
                 <td class="Name private">馮美珍</td>
                 <td class="mail private">mejan@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33501</td>
@@ -791,8 +752,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E076</td>
                 <td class="site-Name">多媒體動畫碩士在職學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.mma.nptu.edu.tw">www.mma.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mma.nptu.edu.tw">mma.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mma.nptu.edu.tw" target="_blank">www.mma.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mma.nptu.edu.tw" target="_blank">mma.nptu.edu.tw</a></td>
                 <td class="Name private">沈俊宏</td>
                 <td class="mail private">ptdola@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34301</td>
@@ -801,8 +762,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E077</td>
                 <td class="site-Name">國際資訊科技與應用碩士學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.iita.nptu.edu.tw">www.iita.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://iita.nptu.edu.tw">iita.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.iita.nptu.edu.tw" target="_blank">www.iita.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://iita.nptu.edu.tw" target="_blank">iita.nptu.edu.tw</a></td>
                 <td class="Name private">邱瑋苓</td>
                 <td class="mail private">skypink10@mail.nptu.edu.tw</td>
                 <td class="phone-num private">34006</td>
@@ -811,8 +772,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E078</td>
                 <td class="site-Name">教育學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.cedu.nptu.edu.tw">www.cedu.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cedu.nptu.edu.tw">cedu.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cedu.nptu.edu.tw" target="_blank">www.cedu.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cedu.nptu.edu.tw" target="_blank">cedu.nptu.edu.tw</a></td>
                 <td class="Name private">李芊蓉</td>
                 <td class="mail private">showeger@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31004</td>
@@ -821,8 +782,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E079</td>
                 <td class="site-Name">教育行政研究所</td>
-                <td class="old-link"><a target="_blank" href="http://www.giea.nptu.edu.tw">www.giea.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://giea.nptu.edu.tw">giea.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.giea.nptu.edu.tw" target="_blank">www.giea.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://giea.nptu.edu.tw" target="_blank">giea.nptu.edu.tw</a></td>
                 <td class="Name private">蘇珮菁</td>
                 <td class="mail private">giea@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31101</td>
@@ -831,8 +792,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E080</td>
                 <td class="site-Name">教育心理與輔導學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.epc.nptu.edu.tw">www.epc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://epc.nptu.edu.tw">epc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.epc.nptu.edu.tw" target="_blank">www.epc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://epc.nptu.edu.tw" target="_blank">epc.nptu.edu.tw</a></td>
                 <td class="Name private">文瑞萱</td>
                 <td class="mail private">wjh@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31301</td>
@@ -841,8 +802,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E081</td>
                 <td class="site-Name">教育學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.edu.nptu.edu.tw">www.edu.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://edu.nptu.edu.tw">edu.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.edu.nptu.edu.tw" target="_blank">www.edu.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://edu.nptu.edu.tw" target="_blank">edu.nptu.edu.tw</a></td>
                 <td class="Name private">劉亭瑜</td>
                 <td class="mail private">tingyu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31402</td>
@@ -851,8 +812,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E082</td>
                 <td class="site-Name">幼兒教育學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.ec.nptu.edu.tw">www.ec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ec.nptu.edu.tw">ec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ec.nptu.edu.tw" target="_blank">www.ec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ec.nptu.edu.tw" target="_blank">ec.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -861,8 +822,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E083</td>
                 <td class="site-Name">特殊教育學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.special.nptu.edu.tw">www.special.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://special.nptu.edu.tw">special.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.special.nptu.edu.tw" target="_blank">www.special.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://special.nptu.edu.tw" target="_blank">special.nptu.edu.tw</a></td>
                 <td class="Name private">王詩涵</td>
                 <td class="mail private">wangsolana@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31701</td>
@@ -871,8 +832,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E084</td>
                 <td class="site-Name">文教事業經營碩士在職學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.mmec.nptu.edu.tw">www.mmec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mmec.nptu.edu.tw">mmec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mmec.nptu.edu.tw" target="_blank">www.mmec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mmec.nptu.edu.tw" target="_blank">mmec.nptu.edu.tw</a></td>
                 <td class="Name private">黃田奇</td>
                 <td class="mail private">tangi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31001</td>
@@ -881,8 +842,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E085</td>
                 <td class="site-Name">特殊教育中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.spec.nptu.edu.tw">www.spec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://spec.nptu.edu.tw">spec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.spec.nptu.edu.tw" target="_blank">www.spec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://spec.nptu.edu.tw" target="_blank">spec.nptu.edu.tw</a></td>
                 <td class="Name private">楊庭宜</td>
                 <td class="mail private">ting@mail.nptu.edu.tw</td>
                 <td class="phone-num private">29002</td>
@@ -891,8 +852,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E087</td>
                 <td class="site-Name">社區諮商中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.counsel-c.nptu.edu.tw">www.counsel-c.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://counsel-c.nptu.edu.tw">counsel-c.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.counsel-c.nptu.edu.tw" target="_blank">www.counsel-c.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://counsel-c.nptu.edu.tw" target="_blank">counsel-c.nptu.edu.tw</a></td>
                 <td class="Name private">陳靜玲</td>
                 <td class="mail private">jling@mail.nptu.edu.tw</td>
                 <td class="phone-num private">7213446</td>
@@ -901,8 +862,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E088</td>
                 <td class="site-Name">人文社會學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.lsod.nptu.edu.tw">www.lsod.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://lsod.nptu.edu.tw">lsod.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.lsod.nptu.edu.tw" target="_blank">www.lsod.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://lsod.nptu.edu.tw" target="_blank">lsod.nptu.edu.tw</a></td>
                 <td class="Name private">林欣眉,<br>陳思雅</td>
                 <td class="mail private">cindylin@mail.nptu.edu.tw,<br>chenya@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35001,<br>35003</td>
@@ -911,8 +872,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E089</td>
                 <td class="site-Name">視覺藝術學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.vart.nptu.edu.tw">www.vart.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://vart.nptu.edu.tw">vart.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.vart.nptu.edu.tw" target="_blank">www.vart.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://vart.nptu.edu.tw" target="_blank">vart.nptu.edu.tw</a></td>
                 <td class="Name private">徐翰匡,<br />張佳玲</td>
                 <td class="mail private">rexhsu1224@mail.nptu.edu.tw,<br />lingo0605@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35501,<br />35502</td>
@@ -921,8 +882,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E090</td>
                 <td class="site-Name">音樂學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.music.nptu.edu.tw">www.music.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://music.nptu.edu.tw">music.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.music.nptu.edu.tw" target="_blank">www.music.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://music.nptu.edu.tw" target="_blank">music.nptu.edu.tw</a></td>
                 <td class="Name private">黃筱媛、蔡宜屏</td>
                 <td class="mail private">huanghy@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35603,<br />35601</td>
@@ -931,8 +892,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E091</td>
                 <td class="site-Name">文化創意產業學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.cci.nptu.edu.tw">www.cci.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cci.nptu.edu.tw">cci.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cci.nptu.edu.tw" target="_blank">www.cci.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cci.nptu.edu.tw" target="_blank">cci.nptu.edu.tw</a></td>
                 <td class="Name private">紀靖茹</td>
                 <td class="mail private">tuionm@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35701</td>
@@ -941,8 +902,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E092</td>
                 <td class="site-Name">社會發展學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.social.nptu.edu.tw">www.social.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://social.nptu.edu.tw">social.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.social.nptu.edu.tw" target="_blank">www.social.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://social.nptu.edu.tw" target="_blank">social.nptu.edu.tw</a></td>
                 <td class="Name private">董家嫻</td>
                 <td class="mail private">liketoy@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35301</td>
@@ -951,8 +912,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E093</td>
                 <td class="site-Name">中國語文學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.cll.nptu.edu.tw">www.cll.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cll.nptu.edu.tw">cll.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cll.nptu.edu.tw" target="_blank">www.cll.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cll.nptu.edu.tw" target="_blank">cll.nptu.edu.tw</a></td>
                 <td class="Name private">林婉媛</td>
                 <td class="mail private">cll@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35201</td>
@@ -961,8 +922,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E094</td>
                 <td class="site-Name">應用日語學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.daj.nptu.edu.tw">www.daj.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://daj.nptu.edu.tw">daj.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.daj.nptu.edu.tw" target="_blank">www.daj.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://daj.nptu.edu.tw" target="_blank">daj.nptu.edu.tw</a></td>
                 <td class="Name private">王玉櫻</td>
                 <td class="mail private">daj@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35901</td>
@@ -971,8 +932,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E095</td>
                 <td class="site-Name">應用英語學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.dae.nptu.edu.tw">www.dae.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://dae.nptu.edu.tw">dae.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.dae.nptu.edu.tw" target="_blank">www.dae.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://dae.nptu.edu.tw" target="_blank">dae.nptu.edu.tw</a></td>
                 <td class="Name private">陳佳貞</td>
                 <td class="mail private">dae@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35101</td>
@@ -981,8 +942,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E096</td>
                 <td class="site-Name">英語學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.english.nptu.edu.tw">www.english.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://english.nptu.edu.tw">english.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.english.nptu.edu.tw" target="_blank">www.english.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://english.nptu.edu.tw" target="_blank">english.nptu.edu.tw</a></td>
                 <td class="Name private">何淑芬</td>
                 <td class="mail private">english@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35401</td>
@@ -991,8 +952,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E097</td>
                 <td class="site-Name">華語文教學碩士學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.mtesl.nptu.edu.tw">www.mtesl.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://mtesl.nptu.edu.tw">mtesl.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.mtesl.nptu.edu.tw" target="_blank">www.mtesl.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://mtesl.nptu.edu.tw" target="_blank">mtesl.nptu.edu.tw</a></td>
                 <td class="Name private">林婉媛</td>
                 <td class="mail private">cll@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35201</td>
@@ -1001,8 +962,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E098</td>
                 <td class="site-Name">原住民專班</td>
-                <td class="old-link"><a target="_blank" href="http://www.indigenous.nptu.edu.tw">www.indigenous.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://indigenous.nptu.edu.tw">indigenous.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.indigenous.nptu.edu.tw" target="_blank">www.indigenous.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://indigenous.nptu.edu.tw" target="_blank">indigenous.nptu.edu.tw</a></td>
                 <td class="Name private">曾華慈</td>
                 <td class="mail private">tzgladys@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35801</td>
@@ -1011,8 +972,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E099</td>
                 <td class="site-Name">數位媒體設計碩士學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.dmd.nptu.edu.tw">www.dmd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://dmd.nptu.edu.tw">dmd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.dmd.nptu.edu.tw" target="_blank">www.dmd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://dmd.nptu.edu.tw" target="_blank">dmd.nptu.edu.tw</a></td>
                 <td class="Name private">張佳玲,<br />徐翰匡</td>
                 <td class="mail private">rexhsu1224@mail.nptu.edu.tw,<br />lingo0605@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35502,<br />35501</td>
@@ -1021,8 +982,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E101</td>
                 <td class="site-Name">客家文化產業碩士學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.hakkam.nptu.edu.tw">www.hakkam.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hakkam.nptu.edu.tw">hakkam.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hakkam.nptu.edu.tw" target="_blank">www.hakkam.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hakkam.nptu.edu.tw" target="_blank">hakkam.nptu.edu.tw</a></td>
                 <td class="Name private">邱薇樺</td>
                 <td class="mail private">july201201@mail.nptu.edu.tw</td>
                 <td class="phone-num private">28001</td>
@@ -1031,8 +992,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E052</td>
                 <td class="site-Name">原住民族教育研究中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.ierc.nptu.edu.tw">www.ierc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ierc.nptu.edu.tw">ierc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ierc.nptu.edu.tw" target="_blank">www.ierc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ierc.nptu.edu.tw" target="_blank">ierc.nptu.edu.tw</a></td>
                 <td class="Name private">朱桂玉</td>
                 <td class="mail private">kueiyu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">23002</td>
@@ -1041,8 +1002,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E053</td>
                 <td class="site-Name">客家研究中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.hakka.nptu.edu.tw">www.hakka.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hakka.nptu.edu.tw">hakka.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hakka.nptu.edu.tw" target="_blank">www.hakka.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hakka.nptu.edu.tw" target="_blank">hakka.nptu.edu.tw</a></td>
                 <td class="Name private">邱薇樺</td>
                 <td class="mail private">july201201@mail.nptu.edu.tw</td>
                 <td class="phone-num private">28001</td>
@@ -1051,8 +1012,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E102</td>
                 <td class="site-Name">理學院</td>
-                <td class="old-link"><a target="_blank" href="http://www.science.nptu.edu.tw">www.science.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://science.nptu.edu.tw">science.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.science.nptu.edu.tw" target="_blank">www.science.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://science.nptu.edu.tw" target="_blank">science.nptu.edu.tw</a></td>
                 <td class="Name private">林珮瑩</td>
                 <td class="mail private">ee8860@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33001</td>
@@ -1061,8 +1022,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E103</td>
                 <td class="site-Name">科普傳播學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.dsc.nptu.edu.tw">www.dsc.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://dsc.nptu.edu.tw">dsc.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.dsc.nptu.edu.tw" target="_blank">www.dsc.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://dsc.nptu.edu.tw" target="_blank">dsc.nptu.edu.tw</a></td>
                 <td class="Name private">吳宜霙</td>
                 <td class="mail private">ptying@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33102</td>
@@ -1071,8 +1032,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E104</td>
                 <td class="site-Name">應用化學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.ac.nptu.edu.tw">www.ac.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ac.nptu.edu.tw">ac.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ac.nptu.edu.tw" target="_blank">www.ac.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ac.nptu.edu.tw" target="_blank">ac.nptu.edu.tw</a></td>
                 <td class="Name private">鄭如珊</td>
                 <td class="mail private">e92008@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33201</td>
@@ -1081,8 +1042,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E105</td>
                 <td class="site-Name">應用數學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.math.nptu.edu.tw">www.math.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://math.nptu.edu.tw">math.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.math.nptu.edu.tw" target="_blank">www.math.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://math.nptu.edu.tw" target="_blank">math.nptu.edu.tw</a></td>
                 <td class="Name private">鄭淳芳</td>
                 <td class="mail private">chunfang@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33301</td>
@@ -1091,8 +1052,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E106</td>
                 <td class="site-Name">應用物理系</td>
-                <td class="old-link"><a target="_blank" href="http://www.physics.nptu.edu.tw">www.physics.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://physics.nptu.edu.tw">physics.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.physics.nptu.edu.tw" target="_blank">www.physics.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://physics.nptu.edu.tw" target="_blank">physics.nptu.edu.tw</a></td>
                 <td class="Name private">鄭瑋中</td>
                 <td class="mail private">flutter123ya@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33701</td>
@@ -1101,8 +1062,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E107</td>
                 <td class="site-Name">體育學系</td>
-                <td class="old-link"><a target="_blank" href="http://www.phy.nptu.edu.tw">www.phy.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://phy.nptu.edu.tw">phy.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.phy.nptu.edu.tw" target="_blank">www.phy.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://phy.nptu.edu.tw" target="_blank">phy.nptu.edu.tw</a></td>
                 <td class="Name private">陳怡廷</td>
                 <td class="mail private">s180615@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33604</td>
@@ -1111,8 +1072,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E111</td>
                 <td class="site-Name">應用科學國際博士班</td>
-                <td class="old-link"><a target="_blank" href="http://www.asiphd.nptu.edu.tw">www.asiphd.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://asiphd.nptu.edu.tw">asiphd.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.asiphd.nptu.edu.tw" target="_blank">www.asiphd.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://asiphd.nptu.edu.tw" target="_blank">asiphd.nptu.edu.tw</a></td>
                 <td class="Name private">林珮瑩</td>
                 <td class="mail private">sci@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33001</td>
@@ -1122,8 +1083,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E136</td>
                 <td class="site-Name">國際暨創新學院</td>
-                <td class="old-link"><a target="_blank" href="http://iicollege.nptu.edu.tw">iicollege.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://iicollege.nptu.edu.tw">iicollege.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://iicollege.nptu.edu.tw/index.aspx" target="_blank">iicollege.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://iicollege.nptu.edu.tw/index.aspx" target="_blank">iicollege.nptu.edu.tw</a></td>
                 <td class="Name private">雲永仁</td>
                 <td class="mail private">john8024@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17402</td>
@@ -1132,8 +1093,8 @@
             <tr style="height: 50px;">
                 <td class="serise-number">E137</td>
                 <td class="site-Name">STEM教育國際碩士學位學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.stem.nptu.edu.tw">www.stem.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://stem.nptu.edu.tw">stem.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://stem.nptu.edu.tw/index.aspx" target="_blank">stem.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://stem.nptu.edu.tw/index.aspx" target="_blank">stem.nptu.edu.tw</a></td>
                 <td class="Name private">雲永仁</td>
                 <td class="mail private">john8024@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17402</td>
@@ -1145,8 +1106,8 @@
             <tr style="height: 50px;background-color: #D4E5EF;">
                 <th class="serise-number">序號</th>
                 <th class="site-Name">網站名稱</th>
-                <th class="old-link">Epage舊網址</th>
-                <th class="new-link">RPAGE網址</th>
+                <th class="old-link">Epage舊網址<br />
+                <sp class="new-link"an style="color:#e74c3c;">(所有五層式網址已停止使用，並</sp><span style="color:#e74c3c;">啟用轉址至2022.01.31)</span></th>
                 <th class="Name private">網站負責人</th>
                 <th class="mail private">Email</th>
                 <th class="phone-num private">分機</th>
@@ -1155,8 +1116,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E032</td>
                 <td class="site-Name">檔案推廣與應用</td>
-                <td class="old-link"><a target="_blank" href="http://www.archives.nptu.edu.tw">www.archives.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://archives.nptu.edu.tw">archives.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.archives.nptu.edu.tw" target="_blank">www.archives.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://archives.nptu.edu.tw" target="_blank">archives.nptu.edu.tw</a></td>
                 <td class="Name private">溫君怡</td>
                 <td class="mail private">chunyi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13103</td>
@@ -1165,8 +1126,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E086</td>
                 <td class="site-Name">桌遊學習研發中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.bgl.nptu.edu.tw">www.bgl.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://bgl.nptu.edu.tw">bgl.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.bgl.nptu.edu.tw" target="_blank">www.bgl.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://bgl.nptu.edu.tw" target="_blank">bgl.nptu.edu.tw</a></td>
                 <td class="Name private">劉育忠</td>
                 <td class="mail private">tedycliu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31552</td>
@@ -1175,8 +1136,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E112</td>
                 <td class="site-Name">產學交流合作</td>
-                <td class="old-link"><a target="_blank" href="http://www.aic.nptu.edu.tw">www.aic.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://aic.nptu.edu.tw">aic.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.aic.nptu.edu.tw" target="_blank">www.aic.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://aic.nptu.edu.tw" target="_blank">aic.nptu.edu.tw</a></td>
                 <td class="Name private">傅屏豐</td>
                 <td class="mail private">god7384230@mail.nptu.edu.tw</td>
                 <td class="phone-num private">14104</td>
@@ -1185,8 +1146,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E113</td>
                 <td class="site-Name">永續建成環境研究中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.sbec.nptu.edu.tw">www.sbec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://sbec.nptu.edu.tw">sbec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.sbec.nptu.edu.tw" target="_blank">www.sbec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://sbec.nptu.edu.tw" target="_blank">sbec.nptu.edu.tw</a></td>
                 <td class="Name private">張詠斯</td>
                 <td class="mail private">ss0938828418@gmail.com</td>
                 <td class="phone-num private">&nbsp;</td>
@@ -1195,8 +1156,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E115</td>
                 <td class="site-Name">招生網站</td>
-                <td class="old-link"><a target="_blank" href="http://www.admission.nptu.edu.tw">www.admission.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://admission.nptu.edu.tw">admission.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.admission.nptu.edu.tw" target="_blank">www.admission.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://admission.nptu.edu.tw" target="_blank">admission.nptu.edu.tw</a></td>
                 <td class="Name private">吳季穎,<br/>陳思帆</td>
                 <td class="mail private">iamwind@mail.nptu.edu.tw,<br />szufan010@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11305,<br />11302</td>
@@ -1205,8 +1166,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E116</td>
                 <td class="site-Name">新生資訊網</td>
-                <td class="old-link"><a target="_blank" href="http://www.freshyou.nptu.edu.tw">www.freshyou.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://freshyou.nptu.edu.tw">freshyou.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.freshyou.nptu.edu.tw" target="_blank">www.freshyou.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://freshyou.nptu.edu.tw" target="_blank">freshyou.nptu.edu.tw</a></td>
                 <td class="Name private">邱羽翎</td>
                 <td class="mail private">yuling@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11202</td>
@@ -1215,8 +1176,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E117</td>
                 <td class="site-Name">資訊公開專區</td>
-                <td class="old-link"><a target="_blank" href="http://pubinfo.nptu.edu.tw">pubinfo.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://pubinfo.nptu.edu.tw">pubinfo.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://pubinfo.nptu.edu.tw/index.aspx" target="_blank">pubinfo.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://pubinfo.nptu.edu.tw/index.aspx" target="_blank">pubinfo.nptu.edu.tw</a></td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -1225,8 +1186,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E118</td>
                 <td class="site-Name">法規委員會</td>
-                <td class="old-link"><a target="_blank" href="http://www.laws.nptu.edu.tw">www.laws.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://laws.nptu.edu.tw">laws.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.laws.nptu.edu.tw" target="_blank">www.laws.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://laws.nptu.edu.tw" target="_blank">laws.nptu.edu.tw</a></td>
                 <td class="Name private">張雯玲</td>
                 <td class="mail private">eileen@mail.nptu.edu.tw</td>
                 <td class="phone-num private">10201</td>
@@ -1235,8 +1196,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E119</td>
                 <td class="site-Name">校友會</td>
-                <td class="old-link"><a target="_blank" href="http://www.nptuaa.nptu.edu.tw">www.nptuaa.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://nptuaa.nptu.edu.tw">nptuaa.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.nptuaa.nptu.edu.tw" target="_blank">www.nptuaa.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://nptuaa.nptu.edu.tw" target="_blank">nptuaa.nptu.edu.tw</a></td>
                 <td class="Name private">沈郁娟</td>
                 <td class="mail private">f0911728@mail.nptu.edu.tw</td>
                 <td class="phone-num private">16306</td>
@@ -1245,8 +1206,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E120</td>
                 <td class="site-Name">社發系南台灣研究工作室</td>
-                <td class="old-link"><a target="_blank" href="http://www.stss.nptu.edu.tw">www.stss.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://stss.nptu.edu.tw">stss.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.stss.nptu.edu.tw" target="_blank">www.stss.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://stss.nptu.edu.tw" target="_blank">stss.nptu.edu.tw</a></td>
                 <td class="Name private">董家嫻</td>
                 <td class="mail private">liketoy@mail.nptu.edu.tw</td>
                 <td class="phone-num private">35301</td>
@@ -1255,8 +1216,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E121</td>
                 <td class="site-Name">即測即評及發證網站</td>
-                <td class="old-link"><a target="_blank" href="http://www.exam.nptu.edu.tw">www.exam.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://exam.nptu.edu.tw">exam.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.exam.nptu.edu.tw" target="_blank">www.exam.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://exam.nptu.edu.tw" target="_blank">exam.nptu.edu.tw</a></td>
                 <td class="Name private">吳佩紋</td>
                 <td class="mail private">amigo3086@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21102</td>
@@ -1265,8 +1226,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E123</td>
                 <td class="site-Name">進修推廣處招生資訊網</td>
-                <td class="old-link"><a target="_blank" href="http://www.night-exam.nptu.edu.tw">www.night-exam.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://night-exam.nptu.edu.tw">night-exam.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.night-exam.nptu.edu.tw" target="_blank">www.night-exam.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://night-exam.nptu.edu.tw" target="_blank">night-exam.nptu.edu.tw</a></td>
                 <td class="Name private">李玉潔,<br />丘安宏</td>
                 <td class="mail private">luj@mail.nptu.edu.tw,<br />ahchiou@mail.nptu.edu.tw</td>
                 <td class="phone-num private">18204,<br />18304</td>
@@ -1275,8 +1236,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E124</td>
                 <td class="site-Name">校園美景</td>
-                <td class="old-link"><a target="_blank" href="http://www.gallery.nptu.edu.tw">www.gallery.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://gallery.nptu.edu.tw">gallery.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.gallery.nptu.edu.tw" target="_blank">www.gallery.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://gallery.nptu.edu.tw" target="_blank">gallery.nptu.edu.tw</a></td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -1285,8 +1246,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E125</td>
                 <td class="site-Name">校慶專區</td>
-                <td class="old-link"><a target="_blank" href="http://www.cele.nptu.edu.tw">www.cele.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://cele.nptu.edu.tw">cele.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.cele.nptu.edu.tw" target="_blank">www.cele.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://cele.nptu.edu.tw" target="_blank">cele.nptu.edu.tw</a></td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -1295,8 +1256,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E126</td>
                 <td class="site-Name">畢業典禮</td>
-                <td class="old-link"><a target="_blank" href="http://www.graduate.nptu.edu.tw">www.graduate.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://graduate.nptu.edu.tw">graduate.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.graduate.nptu.edu.tw" target="_blank">www.graduate.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://graduate.nptu.edu.tw" target="_blank">graduate.nptu.edu.tw</a></td>
                 <td class="Name private">吳崟愷</td>
                 <td class="mail private">abelwu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">21203</td>
@@ -1305,8 +1266,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E127</td>
                 <td class="site-Name">國外教育見習</td>
-                <td class="old-link"><a target="_blank" href="http://www.moebt.nptu.edu.tw">www.moebt.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://moebt.nptu.edu.tw">moebt.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.moebt.nptu.edu.tw" target="_blank">www.moebt.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://moebt.nptu.edu.tw" target="_blank">moebt.nptu.edu.tw</a></td>
                 <td class="Name private">黃明玉</td>
                 <td class="mail private">joyce983@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17002</td>
@@ -1315,8 +1276,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E128</td>
                 <td class="site-Name">幼兒華語教學資源網站</td>
-                <td class="old-link"><a target="_blank" href="http://www.hlitplan.nptu.edu.tw">www.hlitplan.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hlitplan.nptu.edu.tw">hlitplan.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hlitplan.nptu.edu.tw" target="_blank">www.hlitplan.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hlitplan.nptu.edu.tw" target="_blank">hlitplan.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳(幼教系)</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1325,8 +1286,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E129</td>
                 <td class="site-Name">105年度教育部精緻特色發展計畫</td>
-                <td class="old-link"><a target="_blank" href="http://www.meplan.nptu.edu.tw">www.meplan.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://meplan.nptu.edu.tw">meplan.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.meplan.nptu.edu.tw" target="_blank">www.meplan.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://meplan.nptu.edu.tw" target="_blank">meplan.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳(幼教系)</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1335,8 +1296,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E130</td>
                 <td class="site-Name">高教深耕計畫</td>
-                <td class="old-link"><a target="_blank" href="http://www.ugsi2usr.nptu.edu.tw">www.ugsi2usr.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ugsi2usr.nptu.edu.tw">ugsi2usr.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ugsi2usr.nptu.edu.tw" target="_blank">www.ugsi2usr.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ugsi2usr.nptu.edu.tw" target="_blank">ugsi2usr.nptu.edu.tw</a></td>
                 <td class="Name private">楊雅淇</td>
                 <td class="mail private">yachi@mail.nptu.edu.tw</td>
                 <td class="phone-num private">11601</td>
@@ -1345,8 +1306,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E132</td>
                 <td class="site-Name">在地實踐社會責任計畫</td>
-                <td class="old-link"><a target="_blank" href="http://www.specialusr.nptu.edu.tw">www.specialusr.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://specialusr.nptu.edu.tw">specialusr.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.specialusr.nptu.edu.tw" target="_blank">www.specialusr.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://specialusr.nptu.edu.tw" target="_blank">specialusr.nptu.edu.tw</a></td>
                 <td class="Name private">林士愷</td>
                 <td class="mail private">kai329@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27005</td>
@@ -1355,8 +1316,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E133</td>
                 <td class="site-Name">106年度屏東縣客語沉浸教學輔導及師培計畫</td>
-                <td class="old-link"><a target="_blank" href="http://www.hakkaplan.nptu.edu.tw">www.hakkaplan.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hakkaplan.nptu.edu.tw">hakkaplan.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hakkaplan.nptu.edu.tw" target="_blank">www.hakkaplan.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hakkaplan.nptu.edu.tw" target="_blank">hakkaplan.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1365,8 +1326,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E134</td>
                 <td class="site-Name">合格教師申請補助赴新南向友好國家學校任教</td>
-                <td class="old-link"><a target="_blank" href="http://teab.nptu.edu.tw">teab.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://teab.nptu.edu.tw">teab.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://teab.nptu.edu.tw/index.aspx" target="_blank">teab.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://teab.nptu.edu.tw/index.aspx" target="_blank">teab.nptu.edu.tw</a></td>
                 <td class="Name private">鍾祈慧</td>
                 <td class="mail private">chungchihui@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17004</td>
@@ -1375,8 +1336,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E135</td>
                 <td class="site-Name">科學創意遊戲</td>
-                <td class="old-link"><a target="_blank" href="http://www.escience.nptu.edu.tw">www.escience.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://escience.nptu.edu.tw">escience.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.escience.nptu.edu.tw" target="_blank">www.escience.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://escience.nptu.edu.tw" target="_blank">escience.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1385,8 +1346,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E138</td>
                 <td class="site-Name">屏大綠色大學</td>
-                <td class="old-link"><a target="_blank" href="http://www.green.nptu.edu.tw">www.green.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://green.nptu.edu.tw">green.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.green.nptu.edu.tw" target="_blank">www.green.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://green.nptu.edu.tw" target="_blank">green.nptu.edu.tw</a></td>
                 <td class="Name private">胡明燦(環安組)</td>
                 <td class="mail private">hmt@mail.nptu.edu.tw</td>
                 <td class="phone-num private">13900</td>
@@ -1395,8 +1356,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E139</td>
                 <td class="site-Name">客語家庭學習網</td>
-                <td class="old-link"><a target="_blank" href="http://www.hakkafamily.nptu.edu.tw">www.hakkafamily.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hakkafamily.nptu.edu.tw">hakkafamily.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hakkafamily.nptu.edu.tw" target="_blank">www.hakkafamily.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hakkafamily.nptu.edu.tw" target="_blank">hakkafamily.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1405,8 +1366,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E140</td>
                 <td class="site-Name">國立屏東大學人才培育補助計畫網頁</td>
-                <td class="old-link"><a target="_blank" href="http://www.scipark.nptu.edu.tw">www.scipark.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://scipark.nptu.edu.tw">scipark.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.scipark.nptu.edu.tw" target="_blank">www.scipark.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://scipark.nptu.edu.tw" target="_blank">scipark.nptu.edu.tw</a></td>
                 <td class="Name private">鄭瑋中(應物系)</td>
                 <td class="mail private">flutter123ya@mail.nptu.edu.tw</td>
                 <td class="phone-num private">33701</td>
@@ -1415,8 +1376,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E141</td>
                 <td class="site-Name">嚴重特殊傳染性肺炎專區</td>
-                <td class="old-link"><a target="_blank" href="http://novelcoronavirus.nptu.edu.tw">novelcoronavirus.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://novelcoronavirus.nptu.edu.tw">novelcoronavirus.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://novelcoronavirus.nptu.edu.tw/index.aspx" target="_blank">novelcoronavirus.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://novelcoronavirus.nptu.edu.tw/index.aspx" target="_blank">novelcoronavirus.nptu.edu.tw</a></td>
                 <td class="Name private">林姈瑩</td>
                 <td class="mail private">n037823@mail.nptu.edu.tw</td>
                 <td class="phone-num private">12307</td>
@@ -1425,8 +1386,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E142</td>
                 <td class="site-Name">朱雀先驅:屏東偏鄉三師共學模式</td>
-                <td class="old-link"><a target="_blank" href="http://ceduusr.nptu.edu.tw">ceduusr.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ceduusr.nptu.edu.tw">ceduusr.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://ceduusr.nptu.edu.tw/index.aspx" target="_blank">ceduusr.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://ceduusr.nptu.edu.tw/index.aspx" target="_blank">ceduusr.nptu.edu.tw</a></td>
                 <td class="Name private">賴奕淨</td>
                 <td class="mail private">fragrant0112@mail.nptu.edu.tw</td>
                 <td class="phone-num private">27509</td>
@@ -1435,8 +1396,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E143</td>
                 <td class="site-Name">國教人工智慧教材與教學科技研發中心</td>
-                <td class="old-link"><a target="_blank" href="http://ceduai.nptu.edu.tw">ceduai.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ceduai.nptu.edu.tw">ceduai.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="https://ceduai.nptu.edu.tw/index.aspx" target="_blank">ceduai.nptu.edu.tw</a></td>
+                <td class="new-link">原為四層式延續使用<a href="https://ceduai.nptu.edu.tw/index.aspx" target="_blank">ceduai.nptu.edu.tw</a></td>
                 <td class="Name private">汪芳如</td>
                 <td class="mail private">wang18@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31002</td>
@@ -1445,8 +1406,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E144</td>
                 <td class="site-Name">正向老化研究推廣中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.parec.nptu.edu.tw">www.parec.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://parec.nptu.edu.tw">parec.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.parec.nptu.edu.tw" target="_blank">www.parec.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://parec.nptu.edu.tw" target="_blank">parec.nptu.edu.tw</a></td>
                 <td class="Name private">劉素芬(行流系)</td>
                 <td class="mail private">sfliu@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31608</td>
@@ -1455,8 +1416,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E145</td>
                 <td class="site-Name">新生資訊網英文版</td>
-                <td class="old-link"><a target="_blank" href="http://www.freshmaneng.nptu.edu.tw?Lang=en">www.freshmaneng.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://freshmaneng.nptu.edu.tw?Lang=en">freshmaneng.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.freshmaneng.nptu.edu.tw?Lang=en" target="_blank">www.freshmaneng.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://freshmaneng.nptu.edu.tw?Lang=en" target="_blank">freshmaneng.nptu.edu.tw</a></td>
                 <td class="Name private">李宗訓</td>
                 <td class="mail private">edenlee@mail.nptu.edu.tw</td>
                 <td class="phone-num private">17001</td>
@@ -1465,8 +1426,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E146</td>
                 <td class="site-Name">嬰幼兒照顧服務就業學程</td>
-                <td class="old-link"><a target="_blank" href="http://www.ecechildcare.nptu.edu.tw">www.ecechildcare.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ecechildcare.nptu.edu.tw">ecechildcare.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ecechildcare.nptu.edu.tw" target="_blank">www.ecechildcare.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ecechildcare.nptu.edu.tw" target="_blank">ecechildcare.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1475,8 +1436,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E147</td>
                 <td class="site-Name">幼兒藝術課程專案作品成果展</td>
-                <td class="old-link"><a target="_blank" href="http://www.eceart.nptu.edu.tw">www.eceart.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://eceart.nptu.edu.tw">eceart.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.eceart.nptu.edu.tw" target="_blank">www.eceart.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://eceart.nptu.edu.tw" target="_blank">eceart.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1485,8 +1446,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E148</td>
                 <td class="site-Name">南區區域原住民族學生資源中心</td>
-                <td class="old-link"><a target="_blank" href="http://www.sric.nptu.edu.tw">www.sric.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://sric.nptu.edu.tw">sric.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.sric.nptu.edu.tw" target="_blank">www.sric.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://sric.nptu.edu.tw" target="_blank">sric.nptu.edu.tw</a></td>
                 <td class="Name private">廖瑋琳</td>
                 <td class="mail private">makai@mail.nptu.edu.tw</td>
                 <td class="phone-num private">23012</td>
@@ -1495,8 +1456,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E149</td>
                 <td class="site-Name">幼兒園客語教學訪視輔導及增能</td>
-                <td class="old-link"><a target="_blank" href="http://www.hakkat.nptu.edu.tw">www.hakkat.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://hakkat.nptu.edu.tw">hakkat.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.hakkat.nptu.edu.tw" target="_blank">www.hakkat.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://hakkat.nptu.edu.tw" target="_blank">hakkat.nptu.edu.tw</a></td>
                 <td class="Name private">吳佳芳,<br />陳雅鈴</td>
                 <td class="mail private">smalla@mail.nptu.edu.tw,<br />yaling@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31503</td>
@@ -1505,8 +1466,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E150</td>
                 <td class="site-Name">正向心理與VR實驗室</td>
-                <td class="old-link"><a target="_blank" href="http://www.positivepsy.nptu.edu.tw">www.positivepsy.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://positivepsy.nptu.edu.tw">positivepsy.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.positivepsy.nptu.edu.tw" target="_blank">www.positivepsy.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://positivepsy.nptu.edu.tw" target="_blank">positivepsy.nptu.edu.tw</a></td>
                 <td class="Name private">文瑞萱(心輔系)</td>
                 <td class="mail private">wjh@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31301</td>
@@ -1515,8 +1476,8 @@
             <tr style="background-color: #fff5d7; height: 50px;">
                 <td class="serise-number">E151</td>
                 <td class="site-Name">正向心理：諮商與教育期刊</td>
-                <td class="old-link"><a target="_blank" href="http://www.ppce.nptu.edu.tw">www.ppce.nptu.edu.tw</a></td>
-                <td class="new-link"><a target="_blank" href="https://ppce.nptu.edu.tw">ppce.nptu.edu.tw</a></td>
+                <td class="old-link"><a href="http://www.ppce.nptu.edu.tw" target="_blank">www.ppce.nptu.edu.tw</a></td>
+                <td class="new-link"><a href="https://ppce.nptu.edu.tw" target="_blank">ppce.nptu.edu.tw</a></td>
                 <td class="Name private">文瑞萱(心輔系)</td>
                 <td class="mail private">wjh@mail.nptu.edu.tw</td>
                 <td class="phone-num private">31301</td>
@@ -1525,3 +1486,20 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    new function ()
+    {
+        let url = new URL(location.href);
+        let onlylink = url.searchParams.get("o");
+        if( onlylink == 1 )
+        {
+            let private = document.getElementsByClassName("private");
+            for( let i = 0 ; i < private.length ; i ++ )
+            { 
+                private[i].setAttribute("style","display:none;")
+            }
+        }
+    }
+
+</script>
