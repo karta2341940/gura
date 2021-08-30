@@ -1,0 +1,66 @@
+.cnc-link
+{
+    padding: 0.5em;
+    width: fit-content;
+    color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+.cnc-img 
+{
+    padding: 0.2em;
+    min-width: 3em;
+    min-height: 3em;
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    border: #c8e4ff solid 1px;
+    background-color: #F2F9FF;
+    transition: border 0.2s ease, background-color 0.2s ease;
+}
+.cnc-link:hover .cnc-img
+{
+    background-color: #E8F4FF;
+    border: #3ea2ff solid 1px;
+}
+.cnc-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.3em;
+}
+.cnc-title 
+{
+    margin-bottom: 0.8em;
+}
+.cnc-flex-center
+{
+    align-items: center;
+    display: flex;
+}
+.cnc-fav-link-img
+{
+    
+    background-image: url("../pic/Component_1_1-01.svg");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2em;
+}
+.container::after
+{
+    margin-top: 40px;
+}
+.cnc-fav-link-a
+{
+    padding: 0.8em;
+    width: fit-content;
+    color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    text-decoration: none;
+
+}
