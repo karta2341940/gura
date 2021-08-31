@@ -7,6 +7,17 @@
     align-items: center;
     transition: color 0.2s ease;
     text-decoration: none;
+    
+}
+.cnc-border
+{
+    border-radius: 10px;
+    border:1px solid gray ;
+}
+.cnc-link:hover .cnc-img
+{
+    background-color: #E8F4FF;
+    border: #3ea2ff solid 1px;
 }
 .cnc-img 
 {
@@ -21,20 +32,35 @@
     background-color: #F2F9FF;
     transition: border 0.2s ease, background-color 0.2s ease;
 }
-.cnc-link:hover .cnc-img
-{
-    background-color: #E8F4FF;
-    border: #3ea2ff solid 1px;
-}
 .cnc-row{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0.3em;
 }
+/*----Titlt----*/
 .cnc-title 
 {
-    margin-bottom: 0.8em;
+    display: flex !important;
+    flex-direction: row;
+    color: white;
+    
 }
+.cnc-title::before
+{
+    content: '';
+    padding: 0.18em 1em;
+    position: relative;
+    right: -0.3px;
+    clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+    background-color: rgb(240, 179, 28);
+}
+.cnc-title>b
+{
+    padding: 0.1em 1em;
+    background-color: rgb(240, 179, 28);
+    box-shadow: 3px 3px 15px 1px rgb(0, 0, 0, 0.2);
+}
+/*--------*/
 .cnc-flex-center
 {
     align-items: center;
@@ -53,7 +79,7 @@
 {
     margin-top: 40px;
 }
-.cnc-fav-link-a
+.cnc-fav-link
 {
     padding: 0.8em;
     width: fit-content;
@@ -62,5 +88,6 @@
     align-items: center;
     transition: color 0.2s ease;
     text-decoration: none;
+    
 
 }
