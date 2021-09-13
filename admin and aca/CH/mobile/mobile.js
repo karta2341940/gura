@@ -31,7 +31,7 @@ function gura()
     }
 
 }
-
+/*
 
 window.onresize=function()
 {
@@ -63,7 +63,7 @@ window.onresize=function()
          
     
 }
-
+*/
 new function () 
 {
     if(document.body.clientWidth <= 768)

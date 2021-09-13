@@ -1,3 +1,4 @@
+let ctsub=false;
 document.addEventListener('DOMContentLoaded',function()
 {
     let menu = getsetting();
@@ -7,7 +8,7 @@ document.addEventListener('DOMContentLoaded',function()
         let getmenu={}
         try
         {
-            getmenu = JSON.parse(localStorage.getItem("quickMenu") || getmenu );
+            getmenu = JSON.parse(localStorage.getItem("quickMenuStu") || getmenu );
         }
         catch(e)
         {
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded',function()
 
     function cleanMenu()
     {
-        localStorage.removeItem("quickMenu");
+        localStorage.removeItem("quickMenuStu");
         menu = getsetting();
         loadMenu();
         location.reload();
@@ -39,6 +40,9 @@ document.addEventListener('DOMContentLoaded',function()
 
     function loadMenu()
     {
+
+
+
         let quickMenu =document.getElementById("cnc-quick-menu-list-id")
         let quick_A = quickMenu.querySelectorAll("a");
         let container = document.getElementById("cnc-frequenly-use-container");
@@ -46,12 +50,12 @@ document.addEventListener('DOMContentLoaded',function()
 
         if(getTop.length === 0) 
         {
-            console.log("its zero");
+            
             return;
         }
         else 
         {
-            console.log("its not zero");
+            
             container.style.display="block";
         }
         let isReachedTopClickedEnd = false;
@@ -68,8 +72,9 @@ document.addEventListener('DOMContentLoaded',function()
                 return;
             }
             let linkInfo = getTop[index][1];
+            
             link.querySelector('.cnc-frequenly-content>b').childNodes[0].nodeValue = linkInfo['title'];
-            link.setAttribute('title', `${linkInfo['title']}-此連結使用過${linkInfo['count']}次`);
+            link.setAttribute('title', `${linkInfo['title']}-此連結使用過${linkInfo['count']}次`);//IE error
             link.setAttribute('href', linkInfo['url']);
             link.parentElement.style.display = 'block';
 
@@ -89,12 +94,46 @@ document.addEventListener('DOMContentLoaded',function()
             menu[quickMenuSettingKey].url = url;
             menu[quickMenuSettingKey].count = menu[quickMenuSettingKey].count || 0; //To Make sure it is not undefine 
             menu[quickMenuSettingKey]['count']++;
-            localStorage.setItem('quickMenu',JSON.stringify(menu));
+            localStorage.setItem("quickMenuStu",JSON.stringify(menu));
             loadMenu();
         });
     }
-    loadMenu();
-    document.querySelectorAll(".cnc-link").forEach(ForEachlink);
-    document.getElementById("cnc-clean-btn").addEventListener("click",cleanMenu);
+    function sub()
+    {
+        console.log("hello");
+        if(ctsub)
+        {
+            let sub = document.getElementById("cnc-sub-stream")
+            sub.style.height="26em";
+            let usada = document.querySelector(".cnc-list-title>span");
+            usada.style.animation = "rotates 1s forwards"
+            console.log(usada);
+            ctsub=!ctsub;;
+        }
+        else
+        {
+            let sub = document.getElementById("cnc-sub-stream")
+            sub.style.height="3em";
+            let usada = document.querySelector(".cnc-list-title>span");
+            usada.style.animation = "unrotates 1s forwards"
+            ctsub=!ctsub;
+        }
 
+    }
+    
+    
+    loadMenu();
+    document.querySelectorAll(".cnc-link").forEach(ForEachlink);//IE error
+    document.getElementById("cnc-clean-btn").addEventListener("click",cleanMenu);
+    document.getElementById("cnc-sub-row-click").addEventListener("click",sub);
 });
+function display(subStream)
+{
+    let sub_stream =document.getElementById("cnc-sub-stream");
+    console.log(sub_stream)
+    if(!subStream)
+    {
+        sub_stream.style.display="none";
+    }
+        
+}
