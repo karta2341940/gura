@@ -1,4 +1,4 @@
-let ctsub=false;
+
 document.addEventListener('DOMContentLoaded',function()
 {
     let menu = getsetting();
@@ -98,27 +98,21 @@ document.addEventListener('DOMContentLoaded',function()
             loadMenu();
         });
     }
+    let ctsub=false;
     function sub()
     {
-        console.log("hello");
-        if(ctsub)
+        let e = document.querySelector("#cnc-sub-stream");
+        let r = e.querySelector(".cnc-list-title>span")
+        if( e.classList.contains('cnc-list-h') && r.classList.contains("rotate") )
         {
-            let sub = document.getElementById("cnc-sub-stream")
-            sub.style.height="26em";
-            let usada = document.querySelector(".cnc-list-title>span");
-            usada.style.animation = "rotates 1s forwards"
-            console.log(usada);
-            ctsub=!ctsub;;
+            e.classList.remove("cnc-list-h");
+            r.classList.remove("rotate");
         }
         else
         {
-            let sub = document.getElementById("cnc-sub-stream")
-            sub.style.height="3em";
-            let usada = document.querySelector(".cnc-list-title>span");
-            usada.style.animation = "unrotates 1s forwards"
-            ctsub=!ctsub;
+            r.classList.add("rotate");
+            e.classList.add("cnc-list-h");
         }
-
     }
     
     
@@ -130,7 +124,7 @@ document.addEventListener('DOMContentLoaded',function()
 function display(subStream)
 {
     let sub_stream =document.getElementById("cnc-sub-stream");
-    console.log(sub_stream)
+    //console.log(sub_stream)
     if(!subStream)
     {
         sub_stream.style.display="none";
