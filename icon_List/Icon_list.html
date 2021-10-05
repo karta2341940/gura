@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            <link rel="stylesheet" type="text/css" href="../New Employee and student/cnc-icon/cnc-icon.css">
+        -->
+        <link rel="stylesheet" type="text/css" href="https://www.nptu.edu.tw/var/file/0/1000/img/4108/cnc-icon.css">
+        
+        <style>
+            .cnc-img 
+            {
+
+                padding: 0em;
+                min-width: 1em;
+                min-height: 1em;
+                width: 5em;
+                height: 5em;
+                margin-right: 0.5em;
+                border-radius: 100%;
+                border: #c8e4ff solid 1px;
+                background-color: #F2F9FF;
+                transition: border 0.2s ease, background-color 0.2s ease;
+            }
+            .icon
+            {
+                padding: 0.2em 2em;
+            }
+            .className,.fileName
+            {
+                text-align: center;
+                font-size: 1.2em;
+            }
+            .owner
+            {
+                text-align: center;
+                font-size: 1.2em;
+            }
+/*-------license-------*/
+            .license-cc3::before
+            {
+                content: "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)";
+            }
+            .license-free::before
+            {
+                content: "Free for commercial use";
+            }
+            .license-free-website::before
+            {
+                content: "Free for commercial use (Include link to authors website)";
+            }
+            .license-free-personal::before
+            {
+                content: "Free for personal use only";
+            }
+            .license-MIT::before
+            {
+                content: "MIT License";
+            }
+
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded',function()
+            {
+               
+                function ForEachlink(link)
+                {
+                    let classname = link.querySelector(".className");
+                    let icon = link.querySelector(".icon").classList;
+                    let fileName = link.querySelector(".fileName");
+                    let source =link.querySelector(".source>a");
+                    console.log(source.text);
+                    if(source.href!="")
+                    source.text="Link";
+                    classname.innerHTML+=icon[1];
+                    fileName.innerHTML+=icon[1].replace("cnc-icon-","")
+                }
+                document.querySelectorAll(".row").forEach(ForEachlink);
+                
+            });
+        </script>
+    </head>
+
+    <body>
+        <table border="1px solid" style="margin: auto;">
+            <tr>
+                <th style="padding: 0.5em 3em;">Icon</th>
+                <th style="padding: 0.5em 5em;">Class_Name</th>
+                <th style="padding: 0.5em 5em;">File_Name</th>
+                <th style="padding: 0.5em 3em;">Author</th>
+                <th style="padding: 0.5em 1em;">Source</th>
+                <th style="padding: 0.5em 3em;">License</th>
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-test">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName">(No this file) </td>
+
+                <td class="owner">
+                    <a></a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                    This is for test
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-book">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-cloud">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ayub Irawan</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/3844454"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-cc3"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-code">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a target="_bland" href="https://www.iconfinder.com/deemakdaksina">Deemak Daksina</a>
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/3994346"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free-website"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-computer-infomation">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-document">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Becris .</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/3209371"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-document2">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>First Styles</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/1173392"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-cc3"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-element">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>nixx design</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/7106361"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free-personal"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-element2">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>nixx design</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/7106325"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free-personal"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-mail">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-message">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-money">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a target="_bland" href="https://www.iconfinder.com/golmin">Golmin Design</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/1737376"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free-website"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-page">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-squirrel">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Github</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/298871"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-MIT"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-storage">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a target="_bland" href="https://www.iconfinder.com/deemakdaksina">Deemak Daksina</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a target="_bland" href="https://www.iconfinder.com/icons/3994349"></a>
+                </td>
+                
+                <td class="license">
+                    <p class="license-free-website"></p>
+                </td>
+
+            </tr>
+            <tr class="row">
+                <td class="icon cnc-icon-user-checked">
+                    <img class="cnc-img">
+                </td>
+
+                <td class="className"></td >
+
+                <td class="fileName"></td>
+
+                <td class="owner">
+                    <a>Ken (cnc member)</a>
+                    
+                </td>
+
+                <td class="source">
+                    <a></a>
+                </td>
+                
+                <td class="license">
+                    <p class=""></p>
+                </td>
+
+            </tr>     
+        </table>
+    </body>
+</html>

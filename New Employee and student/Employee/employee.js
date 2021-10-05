@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function()
         let getmenu={}
         try
         {
-            getmenu = JSON.parse(localStorage.getItem("quickMenu") || getmenu );
+            getmenu = JSON.parse(localStorage.getItem("quickMenuAdmin") || getmenu );
         }
         catch(e)
         {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',function()
 
     function cleanMenu()
     {
-        localStorage.removeItem("quickMenu");
+        localStorage.removeItem("quickMenuAdmin");
         menu = getsetting();
         loadMenu();
         location.reload();
@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded',function()
         });
         
     }
+    function ForEachlinkFreq(link)
+    {
+        link.addEventListener("mouseup",function(e){
+            let title = link.innerText.trim();
+            const quickMenuSettingKey = title;    
+            menu[quickMenuSettingKey]['count']++;
+            localStorage.setItem("quickMenuStu",JSON.stringify(menu));
+            window.open(menu[quickMenuSettingKey].url);
+            loadMenu();
+        });
+    }
 
     function ForEachlink(link)
     {
@@ -89,11 +100,13 @@ document.addEventListener('DOMContentLoaded',function()
             menu[quickMenuSettingKey].url = url;
             menu[quickMenuSettingKey].count = menu[quickMenuSettingKey].count || 0; //To Make sure it is not undefine 
             menu[quickMenuSettingKey]['count']++;
-            localStorage.setItem('quickMenu',JSON.stringify(menu));
+            localStorage.setItem('quickMenuAdmin',JSON.stringify(menu));
             loadMenu();
         });
     }
     loadMenu();
+    
+    document.querySelectorAll(".cnc-frequenly-content").forEach(ForEachlinkFreq);
     document.querySelectorAll(".cnc-link").forEach(ForEachlink);
     document.getElementById("cnc-clean-btn").addEventListener("click",cleanMenu);
 

@@ -40,9 +40,6 @@ document.addEventListener('DOMContentLoaded',function()
 
     function loadMenu()
     {
-
-
-
         let quickMenu =document.getElementById("cnc-quick-menu-list-id")
         let quick_A = quickMenu.querySelectorAll("a");
         let container = document.getElementById("cnc-frequenly-use-container");
@@ -50,12 +47,10 @@ document.addEventListener('DOMContentLoaded',function()
 
         if(getTop.length === 0) 
         {
-            
             return;
         }
         else 
-        {
-            
+        {   
             container.style.display="block";
         }
         let isReachedTopClickedEnd = false;
@@ -67,19 +62,29 @@ document.addEventListener('DOMContentLoaded',function()
             
             if(isReachedTopClickedEnd)
             {
-                
                 link.parentElement.style.display='none';
                 return;
             }
             let linkInfo = getTop[index][1];
             
             link.querySelector('.cnc-frequenly-content>b').childNodes[0].nodeValue = linkInfo['title'];
-            link.setAttribute('title', `${linkInfo['title']}-此連結使用過${linkInfo['count']}次`);//IE error
+            link.setAttribute('title', linkInfo['title']+'-此連結使用過'+linkInfo['count']+'次');//IE error
             link.setAttribute('href', linkInfo['url']);
             link.parentElement.style.display = 'block';
 
         });
-        
+    }
+    
+    function ForEachlinkFreq(link)
+    {
+        link.addEventListener("mouseup",function(e){
+            let title = link.innerText.trim();
+            const quickMenuSettingKey = title;    
+            menu[quickMenuSettingKey]['count']++;
+            localStorage.setItem("quickMenuStu",JSON.stringify(menu));
+            window.open(menu[quickMenuSettingKey].url);
+            loadMenu();
+        });
     }
 
     function ForEachlink(link)
@@ -87,7 +92,6 @@ document.addEventListener('DOMContentLoaded',function()
         let title = link.innerText;
         let url = link.getAttribute("href");
         const quickMenuSettingKey = title;
-        //console.log(title+"\n"+url);
         link.addEventListener("mouseup",function(e){
             menu[quickMenuSettingKey] = menu[quickMenuSettingKey] || {} ;
             menu[quickMenuSettingKey].title = title;
@@ -98,7 +102,6 @@ document.addEventListener('DOMContentLoaded',function()
             loadMenu();
         });
     }
-    let ctsub=false;
     function sub()
     {
         let e = document.querySelector("#cnc-sub-stream");
@@ -115,16 +118,16 @@ document.addEventListener('DOMContentLoaded',function()
         }
     }
     
-    
     loadMenu();
+    document.querySelectorAll(".cnc-frequenly-content").forEach(ForEachlinkFreq);
     document.querySelectorAll(".cnc-link").forEach(ForEachlink);//IE error
     document.getElementById("cnc-clean-btn").addEventListener("click",cleanMenu);
     document.getElementById("cnc-sub-row-click").addEventListener("click",sub);
 });
+
 function display(subStream)
 {
     let sub_stream =document.getElementById("cnc-sub-stream");
-    //console.log(sub_stream)
     if(!subStream)
     {
         sub_stream.style.display="none";

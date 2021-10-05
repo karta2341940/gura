@@ -52,7 +52,7 @@
 {
     display: flex !important;
     flex-direction: row;
-    color: white;
+    color: #2a2a20cb;
     
 }
 .cnc-title::before
@@ -62,12 +62,12 @@
     position: relative;
     right: -0.3px;
     clip-path: polygon(100% 0, 50% 100%, 100% 100%);
-    background-color: rgb(240, 179, 28);
+    background-color: #F8BC37;
 }
 .cnc-title>b
 {
     padding: 0.2em 1em;
-    background-color: rgb(240, 179, 28);
+    background-color: #F8BC37;
     box-shadow: 3px 3px 15px 1px rgb(0, 0, 0, 0.2);
 }
 /*--------*/
