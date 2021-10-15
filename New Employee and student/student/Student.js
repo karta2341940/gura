@@ -1,14 +1,20 @@
-
 document.addEventListener('DOMContentLoaded',function()
 {
-    let menu = getsetting();
-    
-    function getsetting()
+    let menu = getsetting(0);
+    let version_storage=getsetting(1);
+    function getsetting(b)
     {
+        
         let getmenu={}
         try
-        {
-            getmenu = JSON.parse(localStorage.getItem("quickMenuStu") || getmenu );
+        {   if(!b)
+            {
+                getmenu = JSON.parse(localStorage.getItem("quickMenuStu") || getmenu );
+            }
+            else
+            {
+                getmenu = JSON.parse(localStorage.getItem("VersionStu") || getmenu );
+            }
         }
         catch(e)
         {
@@ -16,7 +22,19 @@ document.addEventListener('DOMContentLoaded',function()
         }
         return getmenu;
     }
-
+    function version_check()
+    {
+        let version = "211012-1";//如果有刪除或是修改則版本號增加
+        if( version_storage["version"] != version && localStorage.getItem("VersionStu") != null)
+        {
+            cleanMenu();
+        } 
+        
+        console.log(version_storage["version"]);
+        version_storage["version"] = version
+        localStorage.setItem("VersionStu",JSON.stringify(version_storage));
+        
+    }
     function cleanMenu()
     {
         localStorage.removeItem("quickMenuStu");
@@ -32,7 +50,7 @@ document.addEventListener('DOMContentLoaded',function()
         result.sort(function(a,b){
             let countA = a[1]['count'];
             let countB = b[1]['count'];
-            console.log(countA,countB,countA>countB);
+            //console.log(countA,countB,countA>countB);
             return countB -countA;
         });
         return result;
@@ -68,8 +86,8 @@ document.addEventListener('DOMContentLoaded',function()
             let linkInfo = getTop[index][1];
             
             link.querySelector('.cnc-frequenly-content>b').childNodes[0].nodeValue = linkInfo['title'];
-            link.setAttribute('title', linkInfo['title']+'-此連結使用過'+linkInfo['count']+'次');//IE error
-            link.setAttribute('href', linkInfo['url']);
+            link.setAttribute('title', linkInfo['title']+'(另開新視窗)-此連結使用過'+linkInfo['count']+'次');//IE error
+            link.setAttribute('href', "javascript:void(0)");
             link.parentElement.style.display = 'block';
 
         });
@@ -117,12 +135,20 @@ document.addEventListener('DOMContentLoaded',function()
             e.classList.add("cnc-list-h");
         }
     }
-    
+    version_check();
     loadMenu();
+    
     document.querySelectorAll(".cnc-frequenly-content").forEach(ForEachlinkFreq);
     document.querySelectorAll(".cnc-link").forEach(ForEachlink);//IE error
     document.getElementById("cnc-clean-btn").addEventListener("click",cleanMenu);
-    document.getElementById("cnc-sub-row-click").addEventListener("click",sub);
+    try
+    {
+            document.getElementById("cnc-sub-row-click").addEventListener("click",sub);
+    }
+    catch
+    {
+
+    }
 });
 
 function display(subStream)

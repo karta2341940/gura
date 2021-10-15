@@ -1,19 +1,39 @@
 document.addEventListener('DOMContentLoaded',function()
 {
-    let menu = getsetting();
-    
-    function getsetting()
+    let menu = getsetting(0);
+    let version_storage=getsetting(1);
+    function getsetting(b)
     {
+        
         let getmenu={}
         try
-        {
-            getmenu = JSON.parse(localStorage.getItem("quickMenuAdmin") || getmenu );
+        {   if(!b)
+            {
+                getmenu = JSON.parse(localStorage.getItem("quickMenuAdmin") || getmenu );
+            }
+            else
+            {
+                getmenu = JSON.parse(localStorage.getItem("VersionAdmin") || getmenu );
+            }
         }
         catch(e)
         {
             return {};
         }
         return getmenu;
+    }
+    function version_check()
+    {
+        let version = "211012-1";//如果有刪除或是修改則版本號增加
+        if( version_storage["version"] != version && localStorage.getItem("VersionAdmin") != null)
+        {
+            cleanMenu();
+        } 
+        
+        console.log(version_storage["version"]);
+        version_storage["version"] = version
+        localStorage.setItem("VersionAdmin",JSON.stringify(version_storage));
+        
     }
 
     function cleanMenu()
@@ -69,8 +89,8 @@ document.addEventListener('DOMContentLoaded',function()
             }
             let linkInfo = getTop[index][1];
             link.querySelector('.cnc-frequenly-content>b').childNodes[0].nodeValue = linkInfo['title'];
-            link.setAttribute('title', `${linkInfo['title']}-此連結使用過${linkInfo['count']}次`);
-            link.setAttribute('href', linkInfo['url']);
+            link.setAttribute('title', linkInfo['title']+'(另開新視窗)-此連結使用過'+linkInfo['count']+'次');
+            link.setAttribute('href', "javascript:void(0)");
             link.parentElement.style.display = 'block';
 
         });
@@ -82,7 +102,7 @@ document.addEventListener('DOMContentLoaded',function()
             let title = link.innerText.trim();
             const quickMenuSettingKey = title;    
             menu[quickMenuSettingKey]['count']++;
-            localStorage.setItem("quickMenuStu",JSON.stringify(menu));
+            localStorage.setItem("quickMenuAdmin",JSON.stringify(menu));
             window.open(menu[quickMenuSettingKey].url);
             loadMenu();
         });
@@ -104,6 +124,7 @@ document.addEventListener('DOMContentLoaded',function()
             loadMenu();
         });
     }
+    version_check();
     loadMenu();
     
     document.querySelectorAll(".cnc-frequenly-content").forEach(ForEachlinkFreq);
