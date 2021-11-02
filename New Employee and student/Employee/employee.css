@@ -41,6 +41,7 @@
     background-color: #F2F9FF;
     -webkit-transition: border 0.2s ease, background-color 0.2s ease;
     transition: border 0.2s ease, background-color 0.2s ease;
+    background-color: #818181;
 }
 .cnc-row{
     display: flex;
